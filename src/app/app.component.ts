@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     AOS.init();
 
+    /*
+
     // Smooth scroll for links with hashes
     $('a.smooth-scroll').click(function (event) {
       // On-page links
@@ -39,5 +41,7 @@ export class AppComponent implements OnInit {
         }
       }
     });
+
+    */
   }
 }
