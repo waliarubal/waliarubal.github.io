@@ -4,16 +4,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="card-body">
                     <div class="h4 mt-0 title">About</div>
-                    <p>Hello! I am Rubal Walia, desktop and web application developer.
-                        Having almost 9 years of demonstrable industrial desktop application programming experience
-                        using .NET
-                        Framework, now moving towards web application development using Angular and .NET Core.</p>
-                    <p>Excillent with frameworks like Windows Presentation Foundation, Universal Windows Platform,
-                        Silverlight and Windows Forms. Started career as component developer, now also experienced with
-                        integration of
-                        third party libraries, payment gateways &amp; hardware in application, creation of application
-                        installers, web automation, data
-                        scraping, etc.</p>
+                    <p *ngFor="let summary of BasicInformation.Summary">{{summary}}</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -21,24 +12,23 @@
                     <div class="h4 mt-0 title">Basic Information</div>
                     <div class="row">
                         <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                        <div class="col-sm-8">30</div>
+                        <div class="col-sm-8">{{BasicInformation.Age}}</div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                        <div class="col-sm-8">walia.rubal@gmail.com</div>
+                        <div class="col-sm-8">{{Contact.Email}}</div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                        <div class="col-sm-8">+91-99288-93416</div>
+                        <div class="col-sm-8">{{Contact.Phone}}</div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                        <div class="col-sm-8">Walia's, 78, 79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur,
-                            Rajasthan, India</div>
+                        <div class="col-sm-8">{{Contact.Address}}</div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                        <div class="col-sm-8">English, Hindi, Punjabi</div>
+                        <div class="col-sm-8">{{Skills.Language}}</div>
                     </div>
                 </div>
             </div>
