@@ -14,9 +14,7 @@ export class AboutComponent implements OnInit {
     private _skills: SkillModel;
 
     constructor(private _dataService: DataService) {
-        // this._basicInfo = null;
-        // this._contact = null;
-        // this._skills = null;
+        
     }
 
     ngOnInit(): void {
