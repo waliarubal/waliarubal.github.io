@@ -1,5 +1,3 @@
-import { Extensions } from '@shared/extensions';
-
 export class ContactModel {
     private  _emails: string[];
     private _phones: string[];
@@ -13,20 +11,12 @@ export class ContactModel {
         this._emails = value;
     }
 
-    get Email() : string {
-        return Extensions.Join(',', this.Emails);
-    }
-
     get Phones(): string[] {
         return this._phones;
     }
 
     set Phones(value: string[]) {
         this._phones = value;
-    }
-
-    get Phone(): string {
-        return Extensions.Join(',', this._phones);
     }
 
     get Address(): string {

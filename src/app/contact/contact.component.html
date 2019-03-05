@@ -58,9 +58,19 @@
                                     <p class="mb-0"><strong>Address </strong></p>
                                     <p class="pb-2">{{Contact.Address}}</p>
                                     <p class="mb-0"><strong>Phone</strong></p>
-                                    <p class="pb-2">{{Contact.Phone}}</p>
+                                    <p class="pb-2">
+                                        <ng-container *ngFor="let phone of Contact.Phones; index as i;">
+                                            <span>{{phone}}</span>
+                                            <span *ngIf="i < Contact.Phones.length - 1">,&nbsp;</span>
+                                        </ng-container>
+                                    </p>
                                     <p class="mb-0"><strong>Email</strong></p>
-                                    <p>{{Contact.Email}}</p>
+                                    <p>
+                                        <ng-container *ngFor="let email of Contact.Emails; index as i;">
+                                            <span>{{email}}</span>
+                                            <span *ngIf="i < Contact.Emails.length - 1">,&nbsp;</span>
+                                        </ng-container>
+                                    </p>
                                 </div>
                             </div>
                         </div>
