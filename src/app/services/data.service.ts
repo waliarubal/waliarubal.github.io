@@ -8,6 +8,8 @@ import { SkillModel } from '@shared/models/skill.model';
 })
 export class DataService {
 
+    private readonly BING_MAP_API_KEY: string = "AvTFCCjxuskfSOPXwR1nbvErOs7It3nBDr-vigU6Bwj1PGL9KlkQHF_5QcMwj3Uv";
+
     GetBasicInformation(): BasicInformationModel {
         let data = new BasicInformationModel();
         data.FirstName = 'Rubal';
