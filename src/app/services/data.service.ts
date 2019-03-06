@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BasicInformationModel } from '@shared/models/basic.model';
 import { ContactModel } from '@shared/models/contact.model';
 import { SkillModel } from '@shared/models/skill.model';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable({
     "providedIn": "root"

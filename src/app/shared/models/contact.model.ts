@@ -1,3 +1,5 @@
+import { Extensions } from '@shared/extensions';
+
 export class ContactModel {
     private  _emails: string[];
     private _phones: string[];
@@ -52,5 +54,9 @@ export class ContactModel {
 
     set Longitude(value: number) {
         this._long = value;
+    }
+
+    get MapImageUrl(): string {
+        return Extensions.GetMapImageUrl(this.Latitude, this.Longitude);
     }
 }
