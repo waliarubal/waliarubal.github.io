@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AgmCoreModule } from "@agm/core";
 import { ProfileComponent } from '@app/content/profile/profile.component';
 import { AboutComponent } from '@app/content/about/about.component';
 import { SkillsComponent } from '@app/content/skills/skills.component';
@@ -25,10 +24,7 @@ import { ContentComponent } from '@app/content/content.component';
         ContentComponent
     ],
     imports: [
-        BrowserModule,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyBLYKcOpUYeAY_IKuk2VjkikAqrHuGBobs'
-        })
+        BrowserModule
     ],
     exports: [
         ContentComponent

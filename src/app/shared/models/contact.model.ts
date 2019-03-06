@@ -3,6 +3,8 @@ export class ContactModel {
     private _phones: string[];
     private _address: string;
     private _formsPreeEmail: string;
+    private _lat: number;
+    private _long: number;
 
     get FormsPreeEmail(): string {
         return this._formsPreeEmail;
@@ -34,5 +36,21 @@ export class ContactModel {
 
     set Address(value: string) {
         this._address = value;
+    }
+
+    get Latitude(): number {
+        return this._lat;
+    }
+
+    set Latitude(value: number) {
+        this._lat = value;
+    }
+
+    get Longitude(): number {
+        return this._long;
+    }
+
+    set Longitude(value: number) {
+        this._long = value;
     }
 }

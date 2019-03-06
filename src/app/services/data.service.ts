@@ -33,6 +33,8 @@ export class DataService {
         data.FormsPreeEmail = data.Emails[0];
         data.Phones = ['+91-99288-93416'];
         data.Address = "Walia's, 78, 79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India";
+        data.Latitude = 26.887809;
+        data.Longitude = 75.892514;
         return data;
     }
 
