@@ -1,5 +1,3 @@
-import { DomSanitizer } from "@angular/platform-browser";
-
 export class Extensions {
 
     private static readonly BING_MAP_API_KEY: string = "AvTFCCjxuskfSOPXwR1nbvErOs7It3nBDr-vigU6Bwj1PGL9KlkQHF_5QcMwj3Uv";
