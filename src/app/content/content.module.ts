@@ -27,7 +27,7 @@ import { ContentComponent } from '@app/content/content.component';
     imports: [
         BrowserModule,
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+            apiKey: 'AIzaSyBLYKcOpUYeAY_IKuk2VjkikAqrHuGBobs'
         })
     ],
     exports: [
