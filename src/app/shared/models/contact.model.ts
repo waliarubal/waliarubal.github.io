@@ -2,6 +2,15 @@ export class ContactModel {
     private  _emails: string[];
     private _phones: string[];
     private _address: string;
+    private _formsPreeEmail: string;
+
+    get FormsPreeEmail(): string {
+        return this._formsPreeEmail;
+    }
+
+    set FormsPreeEmail(value: string) {
+        this._formsPreeEmail = value;
+    }
 
     get Emails(): string[] {
         return this._emails;

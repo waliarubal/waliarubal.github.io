@@ -30,6 +30,7 @@ export class DataService {
     GetContact(): ContactModel {
         let data = new ContactModel();
         data.Emails = ['walia.rubal@gmail.com'];
+        data.FormsPreeEmail = data.Emails[0];
         data.Phones = ['+91-99288-93416'];
         data.Address = "Walia's, 78, 79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India";
         return data;
