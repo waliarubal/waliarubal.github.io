@@ -63,17 +63,19 @@ export class DataService {
         let data: ReferenceModel[] = [];
         data.push(<ReferenceModel>{
             Name: "Aditya Kedia",
-            Designation: "Director / Hyrefox Consultants Pvt Ltd",
+            Designation: "Director",
+            Organization: "Hyrefox Consultants Pvt Ltd",
             AvatarImageUrl: "assets/images/aditya-kedia.jpg",
-            Comment: `Rubal is a dedicated hard working professional. He has a knack for details and is always ready to go an extra mile for perfection.`
+            Comments: ["Rubal is a dedicated hard working professional.",
+                "He has a knack for details and is always ready to go an extra mile for perfection."]
         });
-        data.push(<ReferenceModel> {
+        data.push(<ReferenceModel>{
             Name: "Adrian Ilewicz",
-            Designation: "Senior Technical Consultant / iRiS Software Systems Ltd",
+            Designation: "Senior Technical Consultant",
+            Organization: "iRiS Software Systems Ltd",
             AvatarImageUrl: "assets/images/adrian.jpg",
-            Comment: `Rubal is a great .NET developer! 
-            He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions. 
-            I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!`
+            Comments: ["Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
+            "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
         });
         return data;
     }

@@ -9,13 +9,13 @@
             <div class="carousel-inner">
                 <div class="carousel-item" [class.active]="i === 0" *ngFor="let reference of References; index as i;">
                     <div class="row">
-                        <div class="col-lg-2 col-md-3 cc-reference-header">
+                        <div class="col-lg-3 col-md-3 cc-reference-header">
                             <img src="{{reference.AvatarImageUrl}}" alt="Image" />
                             <div class="h5 pt-2">{{reference.Name}}</div>
-                            <p class="category">{{reference.Designation}}</p>
+                            <p class="category">{{reference.Designation}} /<br>{{reference.Organization}}</p>
                         </div>
-                        <div class="col-lg-10 col-md-9">
-                            <p>{{reference.Comment}}</p>
+                        <div class="col-lg-9 col-md-9">
+                            <p *ngFor="let comment of reference.Comments;">{{comment}}</p>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,14 @@ export class ReferenceModel extends BaseModel {
         this.Set("name", value);
     }
 
+    get Organization(): string {
+        return this.Get("org");
+    }
+
+    set Organization(value: string) {
+        this.Set("org", value);
+    }
+
     get Designation(): string {
         return this.Get("designation");
     }
@@ -26,11 +34,11 @@ export class ReferenceModel extends BaseModel {
         this.Set("avatar_url", value);
     }
 
-    get Comment(): string {
+    get Comments(): string[] {
         return this.Get("comment");
     }
 
-    set Comment(value: string) {
+    set Comments(value: string[]) {
         this.Set("comment", value);
     }
 }
