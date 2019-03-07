@@ -2,20 +2,19 @@ import { Injectable } from '@angular/core';
 import { BasicInformationModel } from '@shared/models/basic.model';
 import { ContactModel } from '@shared/models/contact.model';
 import { SkillModel } from '@shared/models/skill.model';
-import { DomSanitizer } from '@angular/platform-browser';
+import { MediaModel } from '@shared/models/media.model';
 
 @Injectable({
     "providedIn": "root"
 })
 export class DataService {
 
-    private readonly BING_MAP_API_KEY: string = "AvTFCCjxuskfSOPXwR1nbvErOs7It3nBDr-vigU6Bwj1PGL9KlkQHF_5QcMwj3Uv";
-
     GetBasicInformation(): BasicInformationModel {
         let data = new BasicInformationModel();
         data.FirstName = 'Rubal';
         data.LastName = 'Walia';
         data.DateOfBirth = new Date(1988, 7, 1, 17, 42, 0, 0);
+        data.TagLine = "Desktop App Developer, Web Developer, Gamer";
         data.Summary = [
             `Hello! I am Rubal Walia, desktop and web application developer. 
             Having almost 9 years of demonstrable industrial desktop application programming experience using .NET Framework, 
@@ -44,6 +43,18 @@ export class DataService {
     GetSkills(): SkillModel {
         let data = new SkillModel();
         data.Languages = ['English', 'Hindi', 'Punjabi'];
+        return data;
+    }
+
+    GetMedia(): MediaModel {
+        let data = new MediaModel();
+        data.AvatarImageUrl = "assets/images/anthony.jpg";
+        data.ProfileImageUrl = "assets/images/cc-bg-1.jpg";
+        data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
+        data.GitHubUrl = "https://github.com/waliarubal/";
+        data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";
+        data.GooglePlusUrl = "https://plus.google.com/+RubalWalia1988";
+        data.TwitterUrl = "https://twitter.com/walia_rubal";
         return data;
     }
 

@@ -1,32 +1,37 @@
-export class BasicInformationModel {
-    private _firstName: string;
-    private _middleName: string;
-    private _lastName: string;
-    private _dob: Date;
-    private _summary: string[];
+import { BaseModel } from '@shared/models/base.model';
+
+export class BasicInformationModel extends BaseModel {
+
+    get TagLine(): string {
+        return this.Get('tag');
+    }
+
+    set TagLine(value: string) {
+        this.Set('tag', value);
+    }
 
     get FirstName(): string {
-        return this._firstName;
+        return this.Get('f_name');
     }
     
     set FirstName(value: string) {
-        this._firstName = value;
+        this.Set('f_name', value);
     }
 
     get MiddleName(): string {
-        return this._middleName;
+        return this.Get('m_name');
     }
 
     set MiddleName(value: string) {
-        this._middleName = value;
+        this.Set('m_name', value);
     }
 
     get LastName(): string {
-        return this._lastName;
+        return this.Get('l_name');
     }
 
     set LastName(value: string) {
-        this._lastName = value;
+        this.Set('l_name', value);
     }
 
     get Name(): string {
@@ -37,11 +42,11 @@ export class BasicInformationModel {
     }
 
     get DateOfBirth(): Date {
-        return this._dob;
+        return this.Get('dob');
     }
 
     set DateOfBirth(value: Date) {
-        this._dob = value;
+        this.Set('dob', value);
     }
 
     get Age(): number {
@@ -50,10 +55,10 @@ export class BasicInformationModel {
     }
 
     get Summary(): string[] {
-        return this._summary;
+        return this.Get('summary');
     }
 
     set Summary(value: string[]) {
-        this._summary = value;
+        this.Set('summary', value);
     }
 }

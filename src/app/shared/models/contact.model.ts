@@ -1,59 +1,54 @@
 import { Extensions } from '@shared/extensions';
+import { BaseModel } from '@shared/models/base.model';
 
-export class ContactModel {
-    private  _emails: string[];
-    private _phones: string[];
-    private _address: string;
-    private _formsPreeEmail: string;
-    private _lat: number;
-    private _long: number;
+export class ContactModel extends BaseModel {
 
     get FormsPreeEmail(): string {
-        return this._formsPreeEmail;
+        return this.Get('fpe');
     }
 
     set FormsPreeEmail(value: string) {
-        this._formsPreeEmail = value;
+        this.Set('fpe', value);
     }
 
     get Emails(): string[] {
-        return this._emails;
+        return this.Get('emails');
     }
 
     set Emails(value: string[]) {
-        this._emails = value;
+        this.Set('emails', value);
     }
 
     get Phones(): string[] {
-        return this._phones;
+        return this.Get('phones');
     }
 
     set Phones(value: string[]) {
-        this._phones = value;
+        this.Set('phones', value);
     }
 
     get Address(): string {
-        return this._address;
+        return this.Get('address');
     }
 
     set Address(value: string) {
-        this._address = value;
+        this.Set('address', value);
     }
 
     get Latitude(): number {
-        return this._lat;
+        return this.Get('lat');
     }
 
     set Latitude(value: number) {
-        this._lat = value;
+        this.Set('lat', value);
     }
 
     get Longitude(): number {
-        return this._long;
+        return this.Get('long');
     }
 
     set Longitude(value: number) {
-        this._long = value;
+        this.Set('long', value);
     }
 
     get MapImageUrl(): string {
