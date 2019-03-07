@@ -3,6 +3,7 @@ import { BasicInformationModel } from '@shared/models/basic.model';
 import { ContactModel } from '@shared/models/contact.model';
 import { SkillModel } from '@shared/models/skill.model';
 import { MediaModel } from '@shared/models/media.model';
+import { ReferenceModel } from '@shared/models/reference.model';
 
 @Injectable({
     "providedIn": "root"
@@ -55,6 +56,25 @@ export class DataService {
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";
         data.GooglePlusUrl = "https://plus.google.com/+RubalWalia1988";
         data.TwitterUrl = "https://twitter.com/walia_rubal";
+        return data;
+    }
+
+    GetReferences(): ReferenceModel[] {
+        let data: ReferenceModel[] = [];
+        data.push(<ReferenceModel>{
+            Name: "Aditya Kedia",
+            Designation: "Director / Hyrefox Consultants Pvt Ltd",
+            AvatarImageUrl: "assets/images/aditya-kedia.jpg",
+            Comment: `Rubal is a dedicated hard working professional. He has a knack for details and is always ready to go an extra mile for perfection.`
+        });
+        data.push(<ReferenceModel> {
+            Name: "Adrian Ilewicz",
+            Designation: "Senior Technical Consultant / iRiS Software Systems Ltd",
+            AvatarImageUrl: "assets/images/adrian.jpg",
+            Comment: `Rubal is a great .NET developer! 
+            He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions. 
+            I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!`
+        });
         return data;
     }
 
