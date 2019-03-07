@@ -4,6 +4,7 @@ import { ContactModel } from '@shared/models/contact.model';
 import { SkillModel } from '@shared/models/skill.model';
 import { MediaModel } from '@shared/models/media.model';
 import { ReferenceModel } from '@shared/models/reference.model';
+import { Doublet } from '@shared/data-structures/doublet';
 
 @Injectable({
     "providedIn": "root"
@@ -44,13 +45,29 @@ export class DataService {
     GetSkills(): SkillModel {
         let data = new SkillModel();
         data.Languages = ['English', 'Hindi', 'Punjabi'];
+        data.ProfessionalSkills = [
+            new Doublet('Desktop App Development (WPF, WinForms, UWP)', 92),
+            new Doublet('Backend Development (WCF, Web API)', 62),
+            new Doublet('Frontend Development (Angular, jQuery, JavaScript, TypeScript)', 58),
+            new Doublet('RDBMS (Microsoft SQL Server, MySQL, SQLite)', 72),
+            new Doublet('NoSQL DBMS (MongoDB)', 12),
+            new Doublet('ORM (Dapper, Entity Framework)', 33),
+            new Doublet('Microsoft .NET Framework & Mono (C#, VB.NET)', 85),
+            new Doublet('IDE (VS, VS Code, Net Beans, Eclipse, SSMS, Azure Data Studio, MySQL Workbench)', 82),
+            new Doublet('Java', 15),
+            new Doublet('Version Control (Git, SVN, TFS)', 88),
+            new Doublet('Operating Systems (Windows, Linux)', 75),
+            new Doublet('Profiling & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
+            new Doublet('Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory)', 75),
+            new Doublet('Installer Authoring (Install4J, Install Shield, Install Aware, WiX Toolkit)', 36)
+        ];
         return data;
     }
 
     GetMedia(): MediaModel {
         let data = new MediaModel();
         data.AvatarImageUrl = "assets/images/anthony.jpg";
-        data.ProfileImageUrl = "assets/images/cc-bg-1.jpg";
+        data.CoverImageUrl = "assets/images/cc-bg-1.jpg";
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
         data.GitHubUrl = "https://github.com/waliarubal/";
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";

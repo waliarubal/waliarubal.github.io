@@ -10,11 +10,11 @@ export class MediaModel extends BaseModel {
         this.Set('avatar_img', value);
     }
 
-    get ProfileImageUrl(): string {
+    get CoverImageUrl(): string {
         return this.Get('profile_img');
     }
 
-    set ProfileImageUrl(value: string) {
+    set CoverImageUrl(value: string) {
         this.Set('profile_img', value);
     }
 

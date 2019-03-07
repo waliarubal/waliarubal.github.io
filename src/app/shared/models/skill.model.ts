@@ -1,11 +1,21 @@
-export class SkillModel {
-    private _languages: string[];
+import { Doublet } from '@shared/data-structures/doublet';
+import { BaseModel } from '@shared/models/base.model';
+
+export class SkillModel extends BaseModel {
 
     get Languages(): string[] {
-        return this._languages;
+        return this.Get('lang');
     }
 
     set Languages(value: string[]) {
-        this._languages = value;
+        this.Set('lang', value);
+    }
+
+    get ProfessionalSkills(): Doublet<string, number>[] {
+        return this.Get('skill');
+    }
+
+    set ProfessionalSkills(value: Doublet<string, number>[]) {
+        this.Set('skill', value);
     }
 }
