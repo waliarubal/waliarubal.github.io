@@ -94,6 +94,14 @@ export class DataService {
             Comments: ["Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
             "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
         });
+        data.push(<ReferenceModel>{
+            Name: "Manish Bhatnagar",
+            Designation: "Associate Director",
+            Organization: "GirnarSoft",
+            AvatarImageUrl: "assets/images/manish.jpg",
+            Comments: ["Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
+            "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
+        });
         return data;
     }
 
