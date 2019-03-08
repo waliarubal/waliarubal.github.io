@@ -1,5 +1,5 @@
 import { Extensions } from '@shared/extensions';
-import { BaseModel } from '@shared/models/base.model';
+import { BaseModel } from './base.model';
 
 export class ContactModel extends BaseModel {
 

@@ -1,5 +1,5 @@
 import { Doublet } from '@shared/data-structures/doublet';
-import { BaseModel } from '@shared/models/base.model';
+import { BaseModel } from './base.model';
 
 export class SkillModel extends BaseModel {
 

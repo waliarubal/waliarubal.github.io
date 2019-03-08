@@ -5,6 +5,8 @@ import { SkillModel } from '@shared/models/skill.model';
 import { MediaModel } from '@shared/models/media.model';
 import { ReferenceModel } from '@shared/models/reference.model';
 import { Doublet } from '@shared/data-structures/doublet';
+import { ExperienceModel } from '@shared/models/experience.model';
+import { EmploymentModel } from '@shared/models/employment.model.';
 
 @Injectable({
     "providedIn": "root"
@@ -92,7 +94,7 @@ export class DataService {
             Organization: "iRiS Software Systems Ltd",
             AvatarImageUrl: "assets/images/adrian.jpg",
             Comments: ["Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
-            "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
+                "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
         });
         data.push(<ReferenceModel>{
             Name: "Manish Bhatnagar",
@@ -100,8 +102,50 @@ export class DataService {
             Organization: "GirnarSoft",
             AvatarImageUrl: "assets/images/manish.jpg",
             Comments: ["Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
-            "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
+                "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
         });
+        return data;
+    }
+
+    GetExperience(): ExperienceModel {
+        let data = new ExperienceModel();
+        data.Employment = [
+            <EmploymentModel>{
+                Organization: "Dotsquares Technologies India Pvt Ltd",
+                Designation: "Senior Software Developer",
+                JoinedOn: new Date(2017, 9, 1),
+                JobDescription: [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                ]
+            },
+            <EmploymentModel>{
+                Organization: "Girnar Software (SEZ) Pvt Ltd",
+                Designation: "Senior Software Engineer",
+                JoinedOn: new Date(2013, 9, 1),
+                LeftOn: new Date(2017, 8, 1),
+                JobDescription: [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                ]
+            },
+            <EmploymentModel>{
+                Organization: "Incognito Technologies Pvt Ltd",
+                Designation: "Software Developer / Applied Research",
+                JoinedOn: new Date(2011, 10, 1),
+                LeftOn: new Date(2013, 8, 1),
+                JobDescription: [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                ]
+            },
+            <EmploymentModel>{
+                Organization: "Computech Solutions",
+                Designation: "Desktop App Developer",
+                JoinedOn: new Date(2010, 4, 1),
+                LeftOn: new Date(2011, 10, 1),
+                JobDescription: [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                ]
+            }
+        ];
         return data;
     }
 

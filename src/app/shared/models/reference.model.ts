@@ -1,4 +1,4 @@
-import { BaseModel } from '@shared/models/base.model';
+import { BaseModel } from './base.model';
 
 export class ReferenceModel extends BaseModel {
 
