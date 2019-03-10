@@ -80,31 +80,41 @@ export class DataService {
     }
 
     GetReferences(): ReferenceModel[] {
-        let data: ReferenceModel[] = [];
-        data.push(<ReferenceModel>{
-            Name: "Aditya Kedia",
-            Designation: "Director",
-            Organization: "Hyrefox Consultants Pvt Ltd",
-            AvatarImageUrl: "assets/images/aditya-kedia.jpg",
-            Comments: ["Rubal is a dedicated hard working professional.",
-                "He has a knack for details and is always ready to go an extra mile for perfection."]
-        });
-        data.push(<ReferenceModel>{
-            Name: "Adrian Ilewicz",
-            Designation: "Senior Technical Consultant",
-            Organization: "iRiS Software Systems Ltd",
-            AvatarImageUrl: "assets/images/adrian.jpg",
-            Comments: ["Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
-                "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
-        });
-        data.push(<ReferenceModel>{
-            Name: "Manish Bhatnagar",
-            Designation: "Associate Director",
-            Organization: "GirnarSoft",
-            AvatarImageUrl: "assets/images/manish.jpg",
-            Comments: ["Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
-                "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
-        });
+        let data: ReferenceModel[] = [
+            <ReferenceModel>{
+                Name: "Aditya Kedia",
+                Designation: "Director",
+                Organization: "Hyrefox Consultants Pvt Ltd",
+                AvatarImageUrl: "assets/images/aditya-kedia.jpg",
+                Comments: ["Rubal is a dedicated hard working professional.",
+                    "He has a knack for details and is always ready to go an extra mile for perfection."]
+            },
+            <ReferenceModel>{
+                Name: "Adrian Ilewicz",
+                Designation: "Senior Technical Consultant",
+                Organization: "iRiS Software Systems Ltd",
+                AvatarImageUrl: "assets/images/adrian.jpg",
+                Comments: ["Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
+                    "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
+            },
+            <ReferenceModel>{
+                Name: "Manish Bhatnagar",
+                Designation: "Associate Director",
+                Organization: "GirnarSoft",
+                AvatarImageUrl: "assets/images/manish.jpg",
+                Comments: ["Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
+                    "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
+            },
+            <ReferenceModel> {
+                Name: "Vikas Tak",
+                Designation: "Delivery Head",
+                Organization: "GirnarSoft",
+                AvatarImageUrl: "assets/images/vikas.jpg",
+                Comments: ["Versatile talent is what I would define Rubal has possessed and shown while we have worked together.", 
+                "Rubal Walia has worked in my team for almost 4 years and done excellent contributions on project deliverable. His communication and technical skills are very impressive. He manages efficiently and easily the technical tasks, client communications and expectations simultaneously. He is quick learner for new technical skills and can use those effectively in assigned projects and tasks.",
+                "Rubal is a real asset to any team he is part of."]
+            }
+        ];
         return data;
     }
 
