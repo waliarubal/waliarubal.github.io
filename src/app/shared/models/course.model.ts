@@ -9,6 +9,15 @@ export class CourseModel extends BaseModel {
     set Name(value: string) {
         this.Set('name', value);
     }
+
+    get FullName(): string {
+        return this.Get('name_f');
+    }
+
+    set FullName(value: string) {
+        this.Set('name_f', value);
+    }
+
     get Organization(): string {
         return this.Get('org');
     }
@@ -33,5 +42,11 @@ export class CourseModel extends BaseModel {
         this.Set('end', value);
     }
 
+    get Details(): string[] {
+        return this.Get('detail');
+    }
 
+    set Details(value: string[]) {
+        this.Set('detail', value);
+    }
 }
