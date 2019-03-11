@@ -27,7 +27,7 @@ export class DataService {
             `Excillent with frameworks like Windows Presentation Foundation, Universal Windows Platform,
             Silverlight and Windows Forms. Started career as component developer, now also experienced with
             integration of
-            third party libraries, payment gateways &amp; hardware in application, creation of application
+            third party libraries, payment gateways & hardware in application, creation of application
             installers, web automation, data
             scraping, etc.`
         ];
@@ -105,14 +105,14 @@ export class DataService {
                 Comments: ["Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
                     "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
             },
-            <ReferenceModel> {
+            <ReferenceModel>{
                 Name: "Vikas Tak",
                 Designation: "Delivery Head",
                 Organization: "GirnarSoft",
                 AvatarImageUrl: "assets/images/vikas.jpg",
-                Comments: ["Versatile talent is what I would define Rubal has possessed and shown while we have worked together.", 
-                "Rubal Walia has worked in my team for almost 4 years and done excellent contributions on project deliverable. His communication and technical skills are very impressive. He manages efficiently and easily the technical tasks, client communications and expectations simultaneously. He is quick learner for new technical skills and can use those effectively in assigned projects and tasks.",
-                "Rubal is a real asset to any team he is part of."]
+                Comments: ["Versatile talent is what I would define Rubal has possessed and shown while we have worked together.",
+                    "Rubal Walia has worked in my team for almost 4 years and done excellent contributions on project deliverable. His communication and technical skills are very impressive. He manages efficiently and easily the technical tasks, client communications and expectations simultaneously. He is quick learner for new technical skills and can use those effectively in assigned projects and tasks.",
+                    "Rubal is a real asset to any team he is part of."]
             }
         ];
         return data;
@@ -162,7 +162,35 @@ export class DataService {
 
     GetCourses(): CourseModel[] {
         let data: CourseModel[] = [
-
+            <CourseModel>{
+                Name: "Microsoft Certifications",
+                FullName: "Microsoft Certified Professional",
+                Organization: "Microsoft",
+                YearJoined: 2011,
+                YearCompleted: 2012,
+                Details: [
+                    "Microsoft Certified Professional: Microsoft Certified Professional achieved on April 16, 2012 (Certification Number: E921-5531)",
+                    "Microsoft® Certified Technology Specialist: .NET Framework 4, Windows Applications achieved on June 1, 2011 (Certification Number: D279-9599)"
+                ]
+            },
+            <CourseModel>{
+                Name: "Bachelor's Degree",
+                FullName: "Bachelor of Technology",
+                Organization: "Rajasthan Technical University",
+                YearJoined: 2010,
+                YearCompleted: 2012,
+                Details: ["Bachelor of Technology in Computer Science and Engineering from CompuCom Institute of Information Technology and Management, Jaipur RJ (Affiliated to Rajasthan Technical University, Kota RJ)"]
+            },
+            <CourseModel>{
+                Name: "High School",
+                FullName: "Science, Mathematics & Computers",
+                Organization: "Centeral Board of Secondary Education",
+                YearJoined: 2004,
+                YearCompleted: 2006,
+                Details: [
+                    "Secondary from Seedling Public School, Jaipur RJ (Affiliated to Central Board of Secondary Education) in the year 2004.",
+                    "Senior-Secondary from Seedling Public School, Jaipur RJ (Affiliated to Central Board of Secondary Education) in the year 2006."]
+            }
         ];
         return data;
     }
