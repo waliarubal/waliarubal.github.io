@@ -2598,7 +2598,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(55, 140, 63, 0.4);
+  background: rgba(162,183,250,.8);
 }
 
 .progress-container.progress-primary .progress-bar {
@@ -2611,7 +2611,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-info .progress {
-  background: rgba(44, 168, 255, 0.3);
+  background: rgba(162,183,250,.8);
 }
 
 .progress-container.progress-info .progress-bar {
@@ -2624,7 +2624,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-success .progress {
-  background: rgba(24, 206, 15, 0.3);
+  background: rgba(162,183,250,.8);
 }
 
 .progress-container.progress-success .progress-bar {
@@ -2637,7 +2637,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-warning .progress {
-  background: rgba(255, 178, 54, 0.3);
+  background: rgba(162,183,250,.8);
 }
 
 .progress-container.progress-warning .progress-bar {
@@ -2650,7 +2650,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-danger .progress {
-  background: rgba(255, 54, 54, 0.3);
+  background: rgba(162,183,250,.8);
 }
 
 .progress-container.progress-danger .progress-bar {
@@ -7044,13 +7044,13 @@ Created using IcoMoon - icomoon.io
 /* Body */
 /* Profile Page Background Style */
 .page-header {
-  background: rgba(44, 44, 44, 0.2);
+  background: rgba(71,89,147,.5);
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  /*background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));*/
   /* Standard syntax */
 }
 
@@ -7096,7 +7096,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid rgba(71,89,147,.8);
   border-radius: 50%;
   height: 180px;
   width: 180px;
