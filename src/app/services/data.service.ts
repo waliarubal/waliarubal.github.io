@@ -169,8 +169,8 @@ export class DataService {
                 YearJoined: 2011,
                 YearCompleted: 2012,
                 Details: [
-                    "Microsoft Certified Professional: Microsoft Certified Professional achieved on April 16, 2012 (Certification Number: E921-5531)",
-                    "Microsoft® Certified Technology Specialist: .NET Framework 4, Windows Applications achieved on June 1, 2011 (Certification Number: D279-9599)"
+                    "Microsoft Certified Professional (Certification Number: E921-5531) achieved on April 16, 2012.",
+                    "Microsoft® Certified Technology Specialist: .NET Framework 4, Windows Applications (Certification Number: D279-9599) achieved on June 1, 2011."
                 ]
             },
             <CourseModel>{
@@ -179,7 +179,7 @@ export class DataService {
                 Organization: "Rajasthan Technical University",
                 YearJoined: 2016,
                 YearCompleted: 2012,
-                Details: ["Bachelor of Technology in Computer Science and Engineering from CompuCom Institute of Information Technology and Management, Jaipur RJ (Affiliated to Rajasthan Technical University, Kota RJ)"]
+                Details: ["Attained Bachelor of Technology degree in Computer Science and Engineering from CompuCom Institute of Information Technology and Management which is affiliated to Rajasthan Technical University."]
             },
             <CourseModel>{
                 Name: "High School",
@@ -188,8 +188,8 @@ export class DataService {
                 YearJoined: 2004,
                 YearCompleted: 2006,
                 Details: [
-                    "Secondary from Seedling Public School, Jaipur RJ (Affiliated to Central Board of Secondary Education) in the year 2004.",
-                    "Senior-Secondary from Seedling Public School, Jaipur RJ (Affiliated to Central Board of Secondary Education) in the year 2006."]
+                    "Completed Secondary in the year 2004 from Seedling Public School which is affiliated to Central Board of Secondary Education.",
+                    "Completed Senior-Secondary in the year 2006 from Seedling Public School which is affiliated to Central Board of Secondary Education."]
             }
         ];
         return data;
