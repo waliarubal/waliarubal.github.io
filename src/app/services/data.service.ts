@@ -177,7 +177,7 @@ export class DataService {
                 Name: "Bachelor's Degree",
                 FullName: "Bachelor of Technology",
                 Organization: "Rajasthan Technical University",
-                YearJoined: 2016,
+                YearJoined: 2006,
                 YearCompleted: 2012,
                 Details: ["Attained Bachelor of Technology degree in Computer Science and Engineering from CompuCom Institute of Information Technology and Management which is affiliated to Rajasthan Technical University."]
             },
