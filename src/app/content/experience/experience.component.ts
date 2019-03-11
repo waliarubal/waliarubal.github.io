@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseComponent } from '@shared/base.component';
 import { DataService } from '@services/data.service';
 import { ExperienceModel } from '@shared/models/experience.model';
 
@@ -6,11 +7,11 @@ import { ExperienceModel } from '@shared/models/experience.model';
     selector: 'app-experience',
     templateUrl: './experience.component.html'
 })
-export class ExperienceComponent {
+export class ExperienceComponent extends BaseComponent {
     private _experience: ExperienceModel;
 
     constructor(private _dataService: DataService) {
-
+        super();
     }
 
     ngOnInit(): void {

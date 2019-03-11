@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseComponent } from '@shared/base.component';
 import { DataService } from '@services/data.service';
 import { SkillModel } from '@shared/models/skill.model';
 
@@ -6,11 +7,11 @@ import { SkillModel } from '@shared/models/skill.model';
     selector: 'app-skills',
     templateUrl: './skills.component.html'
 })
-export class SkillsComponent {
+export class SkillsComponent extends BaseComponent {
     private _skills: SkillModel;
 
     constructor(private _dataService: DataService) {
-        
+        super();
     }
 
     ngOnInit(): void {

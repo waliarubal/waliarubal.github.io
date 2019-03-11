@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { BaseComponent } from '@shared/base.component';
 import { DataService } from '@services/data.service';
 import { BasicInformationModel } from '@shared/models/basic.model';
 import { ContactModel } from '@shared/models/contact.model';
@@ -8,13 +9,13 @@ import { SkillModel } from '@shared/models/skill.model';
     selector: 'app-about',
     templateUrl: './about.component.html'
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent extends BaseComponent {
     private _basicInfo: BasicInformationModel;
     private _contact: ContactModel;
     private _skills: SkillModel;
 
     constructor(private _dataService: DataService) {
-        
+        super();
     }
 
     ngOnInit(): void {

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { BaseComponent } from '@shared/base.component';
 import { DataService } from '@services/data.service';
 import { BasicInformationModel } from '@shared/models/basic.model';
 import { MediaModel } from '@shared/models/media.model';
@@ -7,12 +8,12 @@ import { MediaModel } from '@shared/models/media.model';
     selector: 'app-footer',
     templateUrl: './footer.component.html'
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent extends BaseComponent {
     private _basicInfo: BasicInformationModel;
     private _media: MediaModel;
 
     constructor(private _dataService: DataService) {
-
+        super();
     }
 
     ngOnInit(): void {

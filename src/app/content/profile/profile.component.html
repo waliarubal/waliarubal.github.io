@@ -4,12 +4,13 @@
         </div>
         <div class="container">
             <div class="content-center">
-                <div class="cc-profile-image"><a href="#"><img src="{{Media.AvatarImageUrl}}" alt="Image" /></a>
+                <div class="cc-profile-image">
+                    <a href="#"><img src="{{Media.AvatarImageUrl}}" alt="Image" /></a>
                 </div>
                 <div class="h2 title">{{BasicInformation.Name}}</div>
                 <p class="category text-white">{{BasicInformation.TagLine}}</p>
                 <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                    data-aos-anchor="data-aos-anchor">Hire Me</a>
+                    data-aos-anchor="data-aos-anchor" (click)="Scroll($event, '#contact')">Hire Me</a>
                 <a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
             </div>
         </div>

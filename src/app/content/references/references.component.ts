@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseComponent } from '@shared/base.component';
 import { DataService } from '@services/data.service';
 import { ReferenceModel } from '@shared/models/reference.model';
 
@@ -6,11 +7,11 @@ import { ReferenceModel } from '@shared/models/reference.model';
     selector: 'app-references',
     templateUrl: './references.component.html'
 })
-export class ReferencesComponent {
+export class ReferencesComponent extends BaseComponent {
     private _references: ReferenceModel[];
 
     constructor(private _dataService: DataService) {
-
+        super();
     }
 
     ngOnInit(): void {
