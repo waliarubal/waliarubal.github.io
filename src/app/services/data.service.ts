@@ -63,7 +63,7 @@ export class DataService {
             new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory, Eto Forms)', 75),
             new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J)', 48),
             new Doublet('ORM (Dapper, Entity Framework)', 33),
-            new Doublet('Java', 15)
+            new Doublet('Java', 20)
         ];
         return data;
     }
