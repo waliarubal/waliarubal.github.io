@@ -50,19 +50,19 @@ export class DataService {
         data.Languages = ['English', 'Hindi', 'Punjabi'];
         data.ProfessionalSkills = [
             new Doublet('Desktop App Development (WPF, WinForms, UWP)', 92),
-            new Doublet('Backend Development (WCF, Web API)', 62),
+            new Doublet('Backend Development (WCF, Web API)', 68),
             new Doublet('Frontend Development (Angular, jQuery, JavaScript, TypeScript)', 58),
-            new Doublet('RDBMS (Microsoft SQL Server, MySQL, SQLite)', 72),
-            new Doublet('NoSQL DBMS (MongoDB)', 12),
-            new Doublet('ORM (Dapper, Entity Framework)', 33),
+            new Doublet('RDBMS (Microsoft SQL Server, MySQL, SQLite)', 78),
             new Doublet('Microsoft .NET Framework & Mono (C#, VB.NET)', 85),
             new Doublet('IDE (VS, VS Code, Net Beans, Eclipse, SSMS, Azure Data Studio, MySQL Workbench)', 82),
-            new Doublet('Java', 15),
             new Doublet('Version Control (Git, SVN, TFS)', 88),
             new Doublet('Operating Systems (Windows, Linux)', 75),
             new Doublet('Profiling & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
             new Doublet('Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory)', 75),
-            new Doublet('Installer Authoring (Install4J, Install Shield, Install Aware, WiX Toolkit)', 36)
+            new Doublet('Installer Authoring (Install4J, Install Shield, Install Aware, WiX Toolkit)', 48),
+            new Doublet('ORM (Dapper, Entity Framework)', 33),
+            new Doublet('Java', 15),
+            new Doublet('NoSQL DBMS (MongoDB)', 12)
         ];
         return data;
     }
@@ -177,7 +177,7 @@ export class DataService {
                 Name: "Bachelor's Degree",
                 FullName: "Bachelor of Technology",
                 Organization: "Rajasthan Technical University",
-                YearJoined: 2010,
+                YearJoined: 2016,
                 YearCompleted: 2012,
                 Details: ["Bachelor of Technology in Computer Science and Engineering from CompuCom Institute of Information Technology and Management, Jaipur RJ (Affiliated to Rajasthan Technical University, Kota RJ)"]
             },
