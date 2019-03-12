@@ -204,14 +204,14 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
-                ImageUrl: "assets/images/projects/binary.jpg",
-                Title: "Active Directory Broker",
-                Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."
-            },
-            <FileModel>{
                 ImageUrl: "assets/images/projects/janitor.PNG",
                 Title: "WinDoc",
                 Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
+            },
+            <FileModel>{
+                ImageUrl: "assets/images/projects/sms-buddy.png",
+                Title: "SMS Buddy",
+                Description: "SMS buddy is an innovative smart way to send SMS in bulk using templates."
             },
             <FileModel>{
                 ImageUrl: "assets/images/projects/ebay-worker.PNG",
@@ -222,11 +222,6 @@ export class DataService {
                 ImageUrl: "assets/images/projects/chaturbate.PNG",
                 Title: "Chatubate Cams Viewer",
                 Description: "A redefined way to view live cam feeds from chaturbate.com without opening it in web browser."
-            },
-            <FileModel>{
-                ImageUrl: "assets/images/projects/sms-buddy.png",
-                Title: "SMS Buddy",
-                Description: "SMS buddy is an innovative smart way to send SMS in bulk using templates."
             },
             <FileModel>{
                 ImageUrl: "assets/images/projects/bcm.PNG",
@@ -242,6 +237,11 @@ export class DataService {
                 ImageUrl: "assets/images/projects/binary.jpg",
                 Title: "WPF Helpers",
                 Description: "WPF helpers is set of classes and resources wrapped up in an assembly to get up to speed with a new WPF MVVM based project targeting .NET Framework 4.0 or 4.5."
+            },
+            <FileModel>{
+                ImageUrl: "assets/images/projects/binary.jpg",
+                Title: "Active Directory Broker",
+                Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."
             }
         ];
         return data;
