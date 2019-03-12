@@ -27,52 +27,23 @@
         </div>
     </div>
     <div class="tab-content gallery mt-5">
+
         <div class="tab-pane active" id="projects" role="tabpanel">
             <div class="ml-auto mr-auto">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" *ngFor="let project of Projects;">
                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <a href="#graphic-design">
-                                <figure class="cc-effect"><img src="assets/images/graphic-design-1.jpg" alt="Image" />
+                            <a href="#">
+                                <figure class="cc-effect">
+                                    <img src="{{project.Url}}" alt="{{project.Title}}" />
                                     <figcaption>
-                                        <div class="h4">Triangle Pattern</div>
-                                        <p>Graphic Design</p>
+                                        <div class="h4">{{project.Title}}</div>
+                                        <p>{{project.Description}}</p>
                                     </figcaption>
                                 </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#graphic-design">
-                                <figure class="cc-effect"><img src="assets/images/graphic-design-2.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Abstract Umbrella</div>
-                                        <p>Graphic Design</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#graphic-design">
-                                <figure class="cc-effect"><img src="assets/images/graphic-design-3.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Cube Surface Texture</div>
-                                        <p>Graphic Design</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#graphic-design">
-                                <figure class="cc-effect"><img src="assets/images/graphic-design-4.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Abstract Line</div>
-                                        <p>Graphic Design</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
