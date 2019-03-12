@@ -36,7 +36,7 @@
                             data-aos-anchor-placement="top-bottom">
                             <a href="#">
                                 <figure class="cc-effect">
-                                    <img src="{{project.Url}}" alt="{{project.Title}}" />
+                                    <img src="{{project.ImageUrl}}" alt="{{project.Title}}" />
                                     <figcaption>
                                         <div class="h4">{{project.Title}}</div>
                                         <p>{{project.Description}}</p>
@@ -57,7 +57,7 @@
                             data-aos-anchor-placement="top-bottom">
                             <a href="#">
                                 <figure class="cc-effect">
-                                    <img src="{{game.Url}}" alt="{{game.Title}}" />
+                                    <img src="{{game.ImageUrl}}" alt="{{game.Title}}" />
                                     <figcaption>
                                         <div class="h4">{{game.Title}}</div>
                                         <p>{{game.Description}}</p>
@@ -73,49 +73,19 @@
         <div class="tab-pane" id="pictures" role="tabpanel">
             <div class="ml-auto mr-auto">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4" *ngFor="let picture of Pictures;">
                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <a href="#Photography">
-                                <figure class="cc-effect"><img src="assets/images/photography-1.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Photoshoot</div>
-                                        <p>Photography</p>
+                            <a href="#">
+                                <figure class="cc-effect">
+                                    <img src="{{picture.ImageUrl}}" alt="Image" />
+                                    <figcaption *ngIf="picture.Title">
+                                        <div class="h4">{{picture.Title}}</div>
+                                        <p>{{picture.Description}}</p>
                                     </figcaption>
                                 </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#Photography">
-                                <figure class="cc-effect"><img src="assets/images/photography-3.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Wedding Photoshoot</div>
-                                        <p>Photography</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#Photography">
-                                <figure class="cc-effect"><img src="assets/images/photography-2.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Beach Photoshoot</div>
-                                        <p>Photography</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#Photography">
-                                <figure class="cc-effect"><img src="assets/images/photography-4.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Nature Photoshoot</div>
-                                        <p>Photography</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

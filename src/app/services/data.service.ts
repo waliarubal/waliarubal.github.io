@@ -71,8 +71,8 @@ export class DataService {
 
     GetMedia(): MediaModel {
         let data = new MediaModel();
-        data.AvatarImageUrl = "assets/images/anthony.jpg";
-        data.CoverImageUrl = "assets/images/cc-bg-1.jpg";
+        data.AvatarImageUrl = "assets/images/photos/rubal.png";
+        data.CoverImageUrl = "assets/images/photos/cover.jpg";
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
         data.GitHubUrl = "https://github.com/waliarubal/";
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";
@@ -87,7 +87,7 @@ export class DataService {
                 Name: "Adrian Ilewicz",
                 Designation: "Senior Technical Consultant",
                 Organization: "iRiS Software Systems Ltd",
-                AvatarImageUrl: "assets/images/adrian.jpg",
+                AvatarImageUrl: "assets/images/people/adrian.jpg",
                 Comments: [
                     "Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
                     "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
@@ -96,7 +96,7 @@ export class DataService {
                 Name: "Manish Bhatnagar",
                 Designation: "Associate Director",
                 Organization: "GirnarSoft",
-                AvatarImageUrl: "assets/images/manish.jpg",
+                AvatarImageUrl: "assets/images/people/manish.jpg",
                 Comments: [
                     "Rubal is an excellent technical guy. I have worked with him and during his tenure, I find Rubal a very reliable and expert in his field.",
                     "He has the rare combination of hard work and dedication towards the assignments given to him. He is one guy whom a team can trust for any new challenge."]
@@ -105,7 +105,7 @@ export class DataService {
                 Name: "Vikas Tak",
                 Designation: "Delivery Head",
                 Organization: "GirnarSoft",
-                AvatarImageUrl: "assets/images/vikas.jpg",
+                AvatarImageUrl: "assets/images/people/vikas.jpg",
                 Comments: [
                     "Versatile talent is what I would define Rubal has possessed and shown while we have worked together.",
                     "Rubal Walia has worked in my team for almost 4 years and done excellent contributions on project deliverable. His communication and technical skills are very impressive. He manages efficiently and easily the technical tasks, client communications and expectations simultaneously. He is quick learner for new technical skills and can use those effectively in assigned projects and tasks.",
@@ -115,7 +115,7 @@ export class DataService {
                 Name: "Aditya Kedia",
                 Designation: "Director",
                 Organization: "Hyrefox Consultants Pvt Ltd",
-                AvatarImageUrl: "assets/images/aditya-kedia.jpg",
+                AvatarImageUrl: "assets/images/people/aditya-kedia.jpg",
                 Comments: [
                     "Rubal is a dedicated hard working professional.",
                     "He has a knack for details and is always ready to go an extra mile for perfection."]
@@ -204,42 +204,42 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
-                Url: "assets/images/binary.jpg",
+                ImageUrl: "assets/images/projects/binary.jpg",
                 Title: "Active Directory Broker",
                 Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."
             },
             <FileModel>{
-                Url: "assets/images/ebay-worker.PNG",
+                ImageUrl: "assets/images/projects/janitor.PNG",
+                Title: "WinDoc",
+                Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
+            },
+            <FileModel>{
+                ImageUrl: "assets/images/projects/ebay-worker.PNG",
                 Title: "eBay Smart Buy - Books",
                 Description: "It is a simple program which will allow one to extract books data from eBay listings."
             }, 
             <FileModel>{
-                Url: "assets/images/janitor.PNG",
-                Title: "Janitor",
-                Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
-            },
-            <FileModel>{
-                Url: "assets/images/chaturbate.PNG",
+                ImageUrl: "assets/images/projects/chaturbate.PNG",
                 Title: "Chatubate Cams Viewer",
                 Description: "A redefined way to view live cam feeds from chaturbate.com without opening it in web browser."
             },
             <FileModel>{
-                Url: "assets/images/sms-buddy.png",
+                ImageUrl: "assets/images/projects/sms-buddy.png",
                 Title: "SMS Buddy",
                 Description: "SMS buddy is an innovative smart way to send SMS in bulk using templates."
             },
             <FileModel>{
-                Url: "assets/images/bcm.PNG",
+                ImageUrl: "assets/images/projects/bcm.PNG",
                 Title: "Billiards Club Manager",
                 Description: "Billiards club management software with overhead table light automation."
             },
             <FileModel>{
-                Url: "assets/images/jd.PNG",
+                ImageUrl: "assets/images/projects/jd.PNG",
                 Title: "JustDial Scrapper",
                 Description: "A simple program to search, extract and export contacts from JustDial.com website."
             },
             <FileModel>{
-                Url: "assets/images/binary.jpg",
+                ImageUrl: "assets/images/projects/binary.jpg",
                 Title: "WPF Helpers",
                 Description: "WPF helpers is set of classes and resources wrapped up in an assembly to get up to speed with a new WPF MVVM based project targeting .NET Framework 4.0 or 4.5."
             }
@@ -250,32 +250,32 @@ export class DataService {
     GetGames(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
-                Url: "assets/images/pubg.jpeg",
+                ImageUrl: "assets/images/games/pubg.jpeg",
                 Title: "PUBG Mobile",
                 Description: "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game."
             },
             <FileModel>{
-                Url: "assets/images/hng.jpg",
+                ImageUrl: "assets/images/games/hng.jpg",
                 Title: "Heroes & Generals",
                 Description: "Heroes & Generals is a free-to-play first-person shooter and real-time strategy video game."
             },
             <FileModel>{
-                Url: "assets/images/ac.jpeg",
+                ImageUrl: "assets/images/games/ac.jpeg",
                 Title: "Assasin's Creed Series",
                 Description: "Assassin's Creed is an action-adventure stealth video game franchise."
             },
             <FileModel>{
-                Url: "assets/images/dota2.jpg",
+                ImageUrl: "assets/images/games/dota2.jpg",
                 Title: "DOTA 2",
                 Description: "Dota 2 is a multiplayer online battle arena video game."
             },
             <FileModel>{
-                Url: "assets/images/coc.jpg",
+                ImageUrl: "assets/images/games/coc.jpg",
                 Title: "Clash of Clans",
                 Description: "Clash of Clans is a freemium mobile strategy video game."
             },
             <FileModel>{
-                Url: "assets/images/star-conflict.jpeg",
+                ImageUrl: "assets/images/games/star-conflict.jpeg",
                 Title: "Star Conflict",
                 Description: "Star Conflict is a free-to-play dynamic MMO space action game."
             },
@@ -285,6 +285,11 @@ export class DataService {
 
     GetPictures(): FileModel[] {
         let data: FileModel[] = [];
+        for(let index = 0; index <= 8; index++) {
+            let picture = new FileModel();
+            picture.ImageUrl = `assets/images/photos/${index}.jpg`;
+            data.push(picture)
+        }
         return data;
     }
 

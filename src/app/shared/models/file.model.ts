@@ -2,11 +2,11 @@ import { BaseModel } from './base.model';
 
 export class FileModel extends BaseModel {
 
-    get Url(): string {
+    get ImageUrl(): string {
         return this.Get('url');
     }
 
-    set Url(value: string) {
+    set ImageUrl(value: string) {
         this.Set('url', value);
     }
 
