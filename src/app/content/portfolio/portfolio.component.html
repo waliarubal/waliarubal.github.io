@@ -27,57 +27,7 @@
         </div>
     </div>
     <div class="tab-content gallery mt-5">
-        <div class="tab-pane active" id="projects">
-            <div class="ml-auto mr-auto">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#web-development">
-                                <figure class="cc-effect"><img src="assets/images/project-1.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Recent Project</div>
-                                        <p>Web Development</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#web-development">
-                                <figure class="cc-effect"><img src="assets/images/project-2.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Startup Project</div>
-                                        <p>Web Development</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#web-development">
-                                <figure class="cc-effect"><img src="assets/images/project-3.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Food Order Project</div>
-                                        <p>Web Development</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
-                            <a href="#web-development">
-                                <figure class="cc-effect"><img src="assets/images/project-4.jpg" alt="Image" />
-                                    <figcaption>
-                                        <div class="h4">Web Advertising Project</div>
-                                        <p>Web Development</p>
-                                    </figcaption>
-                                </figure>
-                            </a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="games" role="tabpanel">
+        <div class="tab-pane active" id="projects" role="tabpanel">
             <div class="ml-auto mr-auto">
                 <div class="row">
                     <div class="col-md-6">
@@ -127,6 +77,42 @@
                 </div>
             </div>
         </div>
+
+        <div class="tab-pane" id="games">
+            <div class="ml-auto mr-auto">
+                <div class="row">
+                    <ng-container *ngFor="let game of Games; let i = index; let even = even;">
+                        <div class="col-md-6" *ngIf="even">
+                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
+                                <a href="#">
+                                    <figure class="cc-effect">
+                                        <img src="{{Games[i].Url}}" alt="{{Games[i].Title}}" />
+                                        <figcaption>
+                                            <div class="h4">{{Games[i].Title}}</div>
+                                            <p>{{Games[i].Description}}</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" *ngIf="Games[i + 1]">
+                                <a href="#">
+                                    <figure class="cc-effect">
+                                        <img src="{{Games[i + 1].Url}}" alt="{{Games[i + 1].Title}}" />
+                                        <figcaption>
+                                            <div class="h4">{{Games[i + 1].Title}}</div>
+                                            <p>{{Games[i + 1].Description}}</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+
         <div class="tab-pane" id="pictures" role="tabpanel">
             <div class="ml-auto mr-auto">
                 <div class="row">

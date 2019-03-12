@@ -8,6 +8,7 @@ import { Doublet } from '@shared/data-structures/doublet';
 import { ExperienceModel } from '@shared/models/experience.model';
 import { EmploymentModel } from '@shared/models/employment.model.';
 import { CourseModel } from '@shared/models/course.model';
+import { FileModel } from '@shared/models/file.model';
 
 @Injectable({
     "providedIn": "root"
@@ -197,6 +198,52 @@ export class DataService {
                     "Completed Senior-Secondary in the year 2006 from Seedling Public School which is affiliated to Central Board of Secondary Education. Subjects studied were English, Mathematics, Physics, Chemistry and Informatics Practices."]
             }
         ];
+        return data;
+    }
+
+    GetProjects(): FileModel[] {
+        let data: FileModel[] = [];
+        return data;
+    }
+
+    GetGames(): FileModel[] {
+        let data: FileModel[] = [
+            <FileModel>{
+                Url: "assets/images/pubg.jpeg",
+                Title: "PUBG Mobile",
+                Description: "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game."
+            },
+            <FileModel>{
+                Url: "assets/images/hng.jpg",
+                Title: "Heroes & Generals",
+                Description: "Heroes & Generals is a free-to-play first-person shooter and real-time strategy video game."
+            },
+            <FileModel>{
+                Url: "assets/images/ac.jpeg",
+                Title: "Assasin's Creed Series",
+                Description: "Assassin's Creed is an action-adventure stealth video game franchise."
+            },
+            <FileModel>{
+                Url: "assets/images/dota2.jpg",
+                Title: "DOTA 2",
+                Description: "Dota 2 is a multiplayer online battle arena video game developed."
+            },
+            <FileModel>{
+                Url: "assets/images/coc.jpg",
+                Title: "Clash of Clans",
+                Description: "Clash of Clans is a freemium mobile strategy video game."
+            },
+            <FileModel>{
+                Url: "assets/images/star-conflict.jpeg",
+                Title: "Star Conflict",
+                Description: "Star Conflict is a free-to-play dynamic MMO space action game."
+            },
+        ];
+        return data;
+    }
+
+    GetPictures(): FileModel[] {
+        let data: FileModel[] = [];
         return data;
     }
 
