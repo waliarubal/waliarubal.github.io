@@ -22,10 +22,10 @@ export class DataService {
         data.DateOfBirth = new Date(1988, 7, 1, 17, 42, 0, 0);
         data.TagLine = "Desktop App Developer, Web Developer, Gamer";
         data.Summary = [
-            `Hello! I am Rubal Walia, an experienced desktop & web application developer and vertran gamer. 
+            `Hello! I am Rubal Walia, an experienced desktop & web application developer and a vertran gamer. 
             Having almost 9 years of demonstrable industrial desktop application programming experience using .NET Framework, 
             now pushing boundaries towards web application development using Angular and .NET Core.`,
-            `Excillent with framework like Windows Presentation Foundation, Universal Windows Platform,
+            `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
             Silverlight and Windows Forms. Started career as component developer; now also experienced with
             integration of third party libraries, payment gateways & hardware in application, creation of application
             installers, web automation, data scraping, performance & memory profiling, software protection, licensing, etc.`
