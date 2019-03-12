@@ -81,34 +81,20 @@
         <div class="tab-pane" id="games">
             <div class="ml-auto mr-auto">
                 <div class="row">
-                    <ng-container *ngFor="let game of Games; let i = index; let even = even;">
-                        <div class="col-md-6" *ngIf="even">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom">
-                                <a href="#">
-                                    <figure class="cc-effect">
-                                        <img src="{{Games[i].Url}}" alt="{{Games[i].Title}}" />
-                                        <figcaption>
-                                            <div class="h4">{{Games[i].Title}}</div>
-                                            <p>{{Games[i].Description}}</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" *ngIf="Games[i + 1]">
-                                <a href="#">
-                                    <figure class="cc-effect">
-                                        <img src="{{Games[i + 1].Url}}" alt="{{Games[i + 1].Title}}" />
-                                        <figcaption>
-                                            <div class="h4">{{Games[i + 1].Title}}</div>
-                                            <p>{{Games[i + 1].Description}}</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
+                    <div class="col-md-6" *ngFor="let game of Games;">
+                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <a href="#">
+                                <figure class="cc-effect">
+                                    <img src="{{game.Url}}" alt="{{game.Title}}" />
+                                    <figcaption>
+                                        <div class="h4">{{game.Title}}</div>
+                                        <p>{{game.Description}}</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
-                    </ng-container>
+                    </div>
                 </div>
             </div>
         </div>

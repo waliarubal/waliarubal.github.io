@@ -226,7 +226,7 @@ export class DataService {
             <FileModel>{
                 Url: "assets/images/dota2.jpg",
                 Title: "DOTA 2",
-                Description: "Dota 2 is a multiplayer online battle arena video game developed."
+                Description: "Dota 2 is a multiplayer online battle arena video game."
             },
             <FileModel>{
                 Url: "assets/images/coc.jpg",
