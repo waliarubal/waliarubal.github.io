@@ -73,6 +73,7 @@ export class DataService {
         let data = new MediaModel();
         data.AvatarImageUrl = "assets/images/photos/rubal.png";
         data.CoverImageUrl = "assets/images/photos/cover.jpg";
+        data.ResumeUrl = "assets/RubalWalia.pdf";
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
         data.GitHubUrl = "https://github.com/waliarubal/";
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";

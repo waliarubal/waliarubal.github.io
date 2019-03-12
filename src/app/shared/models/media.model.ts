@@ -2,6 +2,14 @@ import { BaseModel } from './base.model';
 
 export class MediaModel extends BaseModel {
 
+    get ResumeUrl(): string {
+        return this.Get('cv');
+    }
+
+    set ResumeUrl(value: string) {
+        this.Set('cv', value);
+    }
+
     get AvatarImageUrl(): string {
         return this.Get('avatar_img');
     }
