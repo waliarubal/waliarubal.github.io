@@ -6891,6 +6891,7 @@ Created using IcoMoon - icomoon.io
   display: block;
   max-width: 100%;
   opacity: 1;
+  object-fit: cover;
 }
 
 .gallery .cc-porfolio-image figure figcaption {
