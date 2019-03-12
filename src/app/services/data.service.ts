@@ -204,15 +204,20 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
-                Url: "assets/images/sss.PNG",
-                Title: "Janitor",
-                Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
+                Url: "assets/images/binary.jpg",
+                Title: "Active Directory Broker",
+                Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."
             },
             <FileModel>{
                 Url: "assets/images/ebay-worker.PNG",
                 Title: "eBay Smart Buy - Books",
                 Description: "It is a simple program which will allow one to extract books data from eBay listings."
             }, 
+            <FileModel>{
+                Url: "assets/images/janitor.PNG",
+                Title: "Janitor",
+                Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
+            },
             <FileModel>{
                 Url: "assets/images/chaturbate.PNG",
                 Title: "Chatubate Cams Viewer",
@@ -229,19 +234,14 @@ export class DataService {
                 Description: "Billiards club management software with overhead table light automation."
             },
             <FileModel>{
-                Url: "assets/images/hoo.PNG",
+                Url: "assets/images/jd.PNG",
                 Title: "JustDial Scrapper",
                 Description: "A simple program to search, extract and export contacts from JustDial.com website."
             },
             <FileModel>{
-                Url: "assets/images/sss.PNG",
+                Url: "assets/images/binary.jpg",
                 Title: "WPF Helpers",
                 Description: "WPF helpers is set of classes and resources wrapped up in an assembly to get up to speed with a new WPF MVVM based project targeting .NET Framework 4.0 or 4.5."
-            },
-            <FileModel>{
-                Url: "assets/images/sss.PNG",
-                Title: "Active Directory Broker",
-                Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."
             }
         ];
         return data;
