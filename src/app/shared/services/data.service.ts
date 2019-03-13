@@ -259,31 +259,37 @@ export class DataService {
     GetGames(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
+                Url: "https://www.pubg.com/",
                 ImageUrl: "assets/images/games/pubg.jpeg",
                 Title: "PUBG Mobile",
                 Description: "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game."
             },
             <FileModel>{
+                Url: "https://heroesandgenerals.com/",
                 ImageUrl: "assets/images/games/hng.jpg",
                 Title: "Heroes & Generals",
                 Description: "Heroes & Generals is a free-to-play first-person shooter and real-time strategy video game."
             },
             <FileModel>{
+                Url: "https://assassinscreed.ubisoft.com/game/en-us/home",
                 ImageUrl: "assets/images/games/ac.jpeg",
                 Title: "Assasin's Creed Series",
                 Description: "Assassin's Creed is an action-adventure stealth video game franchise."
             },
             <FileModel>{
+                Url: "http://blog.dota2.com/?l=english",
                 ImageUrl: "assets/images/games/dota2.jpg",
                 Title: "DOTA 2",
                 Description: "Dota 2 is a multiplayer online battle arena video game."
             },
             <FileModel>{
+                Url: "https://supercell.com/en/games/clashofclans/",
                 ImageUrl: "assets/images/games/coc.jpg",
                 Title: "Clash of Clans",
                 Description: "Clash of Clans is a freemium mobile strategy video game."
             },
             <FileModel>{
+                Url: "https://star-conflict.com/",
                 ImageUrl: "assets/images/games/star-conflict.jpeg",
                 Title: "Star Conflict",
                 Description: "Star Conflict is a free-to-play dynamic MMO space action game."

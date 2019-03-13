@@ -55,7 +55,7 @@
                     <div class="col-md-6" *ngFor="let game of Games;">
                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <a href="#">
+                            <a href="{{game.Url}}" target="_blank">
                                 <figure class="cc-effect">
                                     <img src="{{game.ImageUrl}}" alt="{{game.Title}}" />
                                     <figcaption>
@@ -76,7 +76,7 @@
                     <div class="col-md-4" *ngFor="let picture of Pictures;">
                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <a href="#">
+                            <a href="#" onclick="return false;">
                                 <figure class="cc-effect">
                                     <img src="{{picture.ImageUrl}}" alt="Image" />
                                     <figcaption *ngIf="picture.Title">
