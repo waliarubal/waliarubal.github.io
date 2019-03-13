@@ -205,41 +205,49 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
+                Url: "https://github.com/waliarubal/Janitor",
                 ImageUrl: "assets/images/projects/janitor.PNG",
                 Title: "WinDoc",
                 Description: "A Winows PC optimization and tuning application also capable of cleaning and running in background."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/SmsBuddy",
                 ImageUrl: "assets/images/projects/sms-buddy.png",
                 Title: "SMS Buddy",
                 Description: "SMS buddy is an innovative smart way to send SMS in bulk using templates."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/EbayWorker",
                 ImageUrl: "assets/images/projects/ebay-worker.PNG",
                 Title: "eBay Smart Buy - Books",
                 Description: "It is a simple program which will allow one to extract books data from eBay listings."
             }, 
             <FileModel>{
+                Url: "https://github.com/waliarubal/ChaturbatePlayer",
                 ImageUrl: "assets/images/projects/chaturbate.PNG",
                 Title: "Chatubate Cams Viewer",
                 Description: "A redefined way to view live cam feeds from chaturbate.com without opening it in web browser."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/BilliardsClubManager",
                 ImageUrl: "assets/images/projects/bcm.PNG",
                 Title: "Billiards Club Manager",
                 Description: "Billiards club management software with overhead table light automation."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/JustDialScrapper",
                 ImageUrl: "assets/images/projects/jd.PNG",
                 Title: "JustDial Scrapper",
                 Description: "A simple program to search, extract and export contacts from JustDial.com website."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/WpfHelpers",
                 ImageUrl: "assets/images/projects/binary.jpg",
                 Title: "WPF Helpers",
                 Description: "WPF helpers is set of classes and resources wrapped up in an assembly to get up to speed with a new WPF MVVM based project targeting .NET Framework 4.0 or 4.5."
             },
             <FileModel>{
+                Url: "https://github.com/waliarubal/ActiveDirectoryBroker",
                 ImageUrl: "assets/images/projects/binary.jpg",
                 Title: "Active Directory Broker",
                 Description: "WCF service hosted inside a Windows service to be installed on Windows Server to authenticate against an active directory domain."

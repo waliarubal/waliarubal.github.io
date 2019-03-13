@@ -27,13 +27,14 @@
         </div>
     </div>
     <div class="tab-content gallery mt-5">
+        
         <div class="tab-pane active" id="projects" role="tabpanel">
             <div class="ml-auto mr-auto">
                 <div class="row">
                     <div class="col-md-6" *ngFor="let project of Projects;">
                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <a href="#">
+                            <a href="{{project.Url}}" target="_blank">
                                 <figure class="cc-effect">
                                     <img src="{{project.ImageUrl}}" alt="{{project.Title}}" />
                                     <figcaption>

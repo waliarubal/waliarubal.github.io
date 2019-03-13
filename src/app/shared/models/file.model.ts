@@ -2,12 +2,20 @@ import { BaseModel } from './base.model';
 
 export class FileModel extends BaseModel {
 
+    get Url(): string {
+        return this.Get('url')
+    }
+
+    set Url(value: string) {
+        this.Set('url', value);
+    }
+
     get ImageUrl(): string {
-        return this.Get('url');
+        return this.Get('i_url');
     }
 
     set ImageUrl(value: string) {
-        this.Set('url', value);
+        this.Set('i_url', value);
     }
 
     get Title(): string {
