@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href=\"https://waliarubal.github.io/\" && npx angular-cli-ghpages --dir=\"dist/waliarubal-github-io\" --cname=www.waliarubal.com --branch=master --no-silent"
+    "deploy": "ng build --prod --base-href=\"https://waliarubal.github.io/\" && npx angular-cli-ghpages --dir=\"dist/waliarubal-github-io\" --branch=master --no-silent"
   },
   "private": true,
   "dependencies": {
