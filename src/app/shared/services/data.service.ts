@@ -133,7 +133,9 @@ export class DataService {
                 Designation: "Senior Software Developer",
                 JoinedOn: new Date(2017, 9, 1),
                 JobDescription: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Worked as Senior Software Developer for iRiS Software Systems Ltd (United Kingdom) responsible for creating food ordering kiosk application (Universal Windows Platform) to be deployed on Microsoft Surface tablets.",
+                    "Worked as software developer for NFS Technology Group (United Kingdom) responsible for creation of installation program to install NFS Workspace’s add-in inside Outlook 2007, 2010, 2013 and 2016 (both x86 and x64 Outlook installations).",
+                    "Working as software developer for Tix Technology Pvt Ltd (Australia) responsible for applied research and development of modules required for online ticketing system."
                 ]
             },
             <EmploymentModel>{
@@ -142,7 +144,11 @@ export class DataService {
                 JoinedOn: new Date(2013, 9, 9),
                 LeftOn: new Date(2017, 8, 31),
                 JobDescription: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Worked as software developer for Idera Software (United States) to work on their products SQL Virtual Database and SQL Compliance Manager.",
+                    "Worked as software developer for a New Zealand based overseas client to study an existing application’s behavior to identify flaws in system and possible improvements. Created UI framework using WinForms supporting themes (based on free  Krypton toolkit), form based access rights, data import \ export from various sources (Excel 2003 – 07, IBM SPSS Statistics and SQL Server), data transfer mechanism, crash reporting and end user license management.",
+                    "Worked as Senior Technical Consultant for Versata Professional Services (United States). Key responsibilities included handling various phases of software development lifecycle like requirements gathering, requirements & help document preparation, coding, testing and deployment of the developed customizations.",
+                    "Working as architect and developer responsible for planning and authoring (an open source) Windows OS based multi-lingual performance optimization utility.",
+                    "•	Worked as Senior Technical Consultant for Aurea Professional Services (United States) responsible for creating various third party connectors to import roster data inside AlertFind system."
                 ]
             },
             <EmploymentModel>{
@@ -151,7 +157,10 @@ export class DataService {
                 JoinedOn: new Date(2011, 11, 15),
                 LeftOn: new Date(2013, 9, 7),
                 JobDescription: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Architectured and authored a Silverlight based designer (DSB) for creating project designs (for an in-house ORM) using tables and relationships. Support for multiple diagrams, master-detail tables, automatic relation creation just by column type specification, projects gallery, error notifications, etc. were coded. Also optimized project design loading algorithm by implementing parallel source file parsing and deferred loading. DSB completely replaced use of SQL server management studio’s diagram designer for creating project designs by taking care of ORM database rules.",
+                    "Implemented Silverlight enabled multi purpose WCF service for querying Google Geo Location API to determine coordinates based on supplied address, bulk messaging (SMS) function and large SQL query result set transmission between service and Silverlight applications.",
+                    "Authored a Silverlight grid control from scratch for displaying and printing formatted data. Also data could be emailed and exported as HTML, PDF or excel document. Operations like drag-drop and theming were also incorporated.",
+                    "Studied silo bag bagging process and authored client-server based desktop application using Windows Forms to monitor and carry out various operations in Grain Park for warehousing of wheat."
                 ]
             },
             <EmploymentModel>{
@@ -160,7 +169,9 @@ export class DataService {
                 JoinedOn: new Date(2010, 4, 10),
                 LeftOn: new Date(2011, 6, 15),
                 JobDescription: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Woked as desktop application developer using Windows Forms to develop application for clients.",
+                    "Built 'The Syncline' for inventory management and bulk listing over shopping carts like eBay, Amazon, Price Minister and Fnac. It was also used for managing orders and billing.",
+                    "Authored a local and remote file system browser with UI similar to FileZilla FTP client. This component worked over FTP, FTPS and SFTP protocols to communicate with remote servers. Used Chilkat FTP library for .NET to serve the basis for this project."
                 ]
             }
         ];
