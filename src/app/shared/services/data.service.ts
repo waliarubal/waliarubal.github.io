@@ -94,6 +94,16 @@ export class DataService {
                     "I had a pleasure managing Rubal as a contractor, and he exceeded our expectations!"]
             },
             <ReferenceModel>{
+                Name: "Bernard Leigh",
+                Designation: "Vice President (Customer Success)",
+                Organization: "Aurea Software",
+                AvatarImageUrl: "assets/images/people/bernie.jpg",
+                Comments: [
+                    "I always found Rubal's attitude and approach, alongside his quality of work delivered to be refreshing. He became a resource that I would be able to count on and always had good interactions with my teams.",
+                    "I would definitely consider him for a role in one of my teams should there be a requirement in the future."
+                ]
+            },
+            <ReferenceModel>{
                 Name: "Manish Bhatnagar",
                 Designation: "Associate Director",
                 Organization: "GirnarSoft",
