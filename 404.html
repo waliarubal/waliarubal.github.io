@@ -10,9 +10,62 @@
 <link rel="stylesheet" href="styles.4d46c2b15ff47278947d.css"></head>
 
 <body id="top">
-  <app-root></app-root>
+  <app-root>
+    <style>
+      app-root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen-Sans,
+          Ubuntu,
+          Cantarell,
+          Helvetica,
+          sans-serif;
+        font-size: 2.5em;
+        font-weight: 700;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      body {
+        background: rgb(71, 89, 147);
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes dots {
+        50% {
+          transform: translateY(-.4rem);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .dot {
+        animation: dots 1.5s ease-out infinite;
+      }
+
+      .dot-2 {
+        animation-delay: .5s;
+      }
+
+      .dot-3 {
+        animation-delay: 1s;
+      }
+    </style>
+
+    Loading<span class="dot">.</span><span class="dot dot-2">.</span><span class="dot dot-3">.</span>
+  </app-root>
   <script src="https://unpkg.com/now-ui-kit@1.1.0/assets/js/core/jquery.3.2.1.min.js"></script>
   <script src="https://unpkg.com/now-ui-kit@1.1.0/assets/js/now-ui-kit.js"></script>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="scripts.14fc28b9ea63336bfb8b.js"></script><script type="text/javascript" src="main.adac492822fc21cdfbc9.js"></script></body>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="scripts.888ffdc37cada9e7e393.js"></script><script type="text/javascript" src="main.041e813f9056fc3b65dd.js"></script></body>
 
 </html>
