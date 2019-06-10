@@ -1,6 +1,9 @@
 {
   "name": "waliarubal-github-io",
   "version": "0.0.0",
+  "config": {
+    "domain": "www.waliarubal.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,8 +11,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy-old": "ng build --prod --base-href=\"https://waliarubal.github.io/\" && npx angular-cli-ghpages --dir=\"dist/waliarubal-github-io\" --cname=www.waliarubal.com --branch=master --no-silent",
-    "deploy": "ng build --prod --base-href=\"https://www.waliarubal.com\" && npx angular-cli-ghpages --dir=\"dist/waliarubal-github-io\" --cname=www.waliarubal.com --branch=master --no-silent"
+    "deploy-old": "%npm_package_scripts_build% --prod --base-href=\"https://waliarubal.github.io/\" && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent",
+    "deploy": "%npm_package_scripts_build% --prod --base-href=\"https://%npm_package_config_domain%\" && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent"
   },
   "private": true,
   "dependencies": {
