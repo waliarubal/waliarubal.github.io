@@ -164,24 +164,13 @@ export class DataService {
             <EmploymentModel>{
                 Organization: "Incognito Technologies Pvt Ltd",
                 Designation: "Software Developer / Applied Research",
-                JoinedOn: new Date(2011, 11, 15),
+                JoinedOn: new Date(2010, 4, 10),
                 LeftOn: new Date(2013, 9, 7),
                 JobDescription: [
                     "Architectured and authored a Silverlight based designer (DSB) for creating project designs (for an in-house ORM) using tables and relationships. Support for multiple diagrams, master-detail tables, automatic relation creation just by column type specification, projects gallery, error notifications, etc. were coded. Also optimized project design loading algorithm by implementing parallel source file parsing and deferred loading. DSB completely replaced use of SQL server management studio’s diagram designer for creating project designs by taking care of ORM database rules.",
                     "Implemented Silverlight enabled multi purpose WCF service for querying Google Geo Location API to determine coordinates based on supplied address, bulk messaging (SMS) function and large SQL query result set transmission between service and Silverlight applications.",
                     "Authored a Silverlight grid control from scratch for displaying and printing formatted data. Also data could be emailed and exported as HTML, PDF or excel document. Operations like drag-drop and theming were also incorporated.",
                     "Studied silo bag bagging process and authored client-server based desktop application using Windows Forms to monitor and carry out various operations in Grain Park for warehousing of wheat."
-                ]
-            },
-            <EmploymentModel>{
-                Organization: "Computech Solutions",
-                Designation: "Desktop App Developer",
-                JoinedOn: new Date(2010, 4, 10),
-                LeftOn: new Date(2011, 6, 15),
-                JobDescription: [
-                    "Woked as desktop application developer using Windows Forms to develop application for clients.",
-                    "Built 'The Syncline' for inventory management and bulk listing over shopping carts like eBay, Amazon, Price Minister and Fnac. It was also used for managing orders and billing.",
-                    "Authored a local and remote file system browser with UI similar to FileZilla FTP client. This component worked over FTP, FTPS and SFTP protocols to communicate with remote servers. Used Chilkat FTP library for .NET to serve the basis for this project."
                 ]
             }
         ];
@@ -191,7 +180,7 @@ export class DataService {
     GetCourses(): CourseModel[] {
         let data: CourseModel[] = [
             <CourseModel>{
-                Name: "Microsoft Certifications",
+                Name: "Microsoft Certification",
                 FullName: "Microsoft Certified Professional",
                 Organization: "Microsoft",
                 YearJoined: 2011,
