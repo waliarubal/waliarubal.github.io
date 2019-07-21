@@ -54,7 +54,7 @@ export class DataService {
         data.ProfessionalSkills = [
             new Doublet('Desktop App Development (WPF, WinForms, UWP, Silverlight)', 92),
             new Doublet('Backend Development (WCF, Web API)', 68),
-            new Doublet('Frontend Development (Angular, TypeScript, JavaScript)', 58),
+            new Doublet('Frontend Development (Angular, TypeScript, JavaScript, Electron)', 72),
             new Doublet('Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access)', 78),
             new Doublet('.NET Framework & Mono (C#, VB.NET)', 85),
             new Doublet('IDE (VS, VS Code, Net Beans, Eclipse, SSMS, Azure Data Studio, MySQL Workbench)', 82),
@@ -63,8 +63,7 @@ export class DataService {
             new Doublet('Profiling, Code Protection & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
             new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory, Eto Forms)', 75),
             new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J)', 48),
-            new Doublet('ORM (Dapper, Entity Framework)', 33),
-            new Doublet('Java', 20)
+            new Doublet('ORM (Dapper, Entity Framework)', 42)
         ];
         return data;
     }
@@ -271,7 +270,7 @@ export class DataService {
             <FileModel>{
                 Url: "https://www.pubg.com/",
                 ImageUrl: "assets/images/games/pubg.jpeg",
-                Title: "PUBG Mobile",
+                Title: "PUBG PC Lite",
                 Description: "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game."
             },
             <FileModel>{
