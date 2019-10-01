@@ -52,7 +52,7 @@ export class DataService {
             'Punjabi'
         ];
         data.ProfessionalSkills = [
-            new Doublet('Desktop App Development (WPF, WinForms, UWP, Silverlight)', 92),
+            new Doublet('Desktop App Development (WPF, WinForms, UWP, Silverlight, Avalonia)', 92),
             new Doublet('Backend Development (WCF, Web API)', 68),
             new Doublet('Frontend Development (Angular, TypeScript, JavaScript, Electron)', 72),
             new Doublet('Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access)', 78),
@@ -61,7 +61,7 @@ export class DataService {
             new Doublet('Version Control (Git, SVN, TFS)', 88),
             new Doublet('Operating Systems (Windows, Linux)', 75),
             new Doublet('Profiling, Code Protection & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
-            new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory, Eto Forms)', 75),
+            new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory)', 75),
             new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J)', 48),
             new Doublet('ORM (Dapper, Entity Framework)', 42)
         ];
@@ -214,6 +214,12 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
+                Url: "https://github.com/waliarubal/Jaya",
+                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/master/Screenshots/00.png",
+                Title: "Jaya",
+                Description: "Cross platform file explorer application compatible with Windows, Mac and Linux operating systems."
+            },
+            <FileModel>{
                 Url: "https://github.com/waliarubal/Janitor",
                 ImageUrl: "assets/images/projects/janitor.PNG",
                 Title: "WinDoc",
@@ -267,6 +273,12 @@ export class DataService {
 
     GetGames(): FileModel[] {
         let data: FileModel[] = [
+            <FileModel>{
+                Url: "https://rust.facepunch.com/",
+                ImageUrl: "assets/images/games/rust.jpg",
+                Title: "Rust",
+                Description: "Rust is a multiplayer-only survival video game for Microsoft Windows, macOS and Linux."
+            },
             <FileModel>{
                 Url: "https://www.pubg.com/",
                 ImageUrl: "assets/images/games/pubg.jpeg",
