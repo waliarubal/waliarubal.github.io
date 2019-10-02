@@ -9,14 +9,19 @@ import { ExperienceModel } from '@shared/models/experience.model';
 import { EmploymentModel } from '@shared/models/employment.model.';
 import { CourseModel } from '@shared/models/course.model';
 import { FileModel } from '@shared/models/file.model';
+import { DmcaModel } from '@shared/models/dmca.model';
 
 @Injectable({
     "providedIn": "root"
 })
 export class DataService {
 
-    GetDmcaId(): string {
-        return '248f046b-b7e2-4a15-b47a-e9722393e2f7';
+    GetDmca(): DmcaModel {
+        let data = new DmcaModel();
+        data.Domain = "www.waliarubal.com";
+        data.Id = "248f046b-b7e2-4a15-b47a-e9722393e2f7";
+        data.VerificationCode = "MTFMSUkvTEQxdHFiSHhpU0JCSHBLb1Ayb2lGVlcrZlErNlplb3dwQ1dQVT01";
+        return data;
     }
 
     GetBasicInformation(): BasicInformationModel {

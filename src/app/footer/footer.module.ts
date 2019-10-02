@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DmcaModule } from '../dmca/dmca.module';
 
 import { FooterComponent } from './footer.component';
 
@@ -8,7 +9,8 @@ import { FooterComponent } from './footer.component';
         FooterComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        DmcaModule
     ],
     exports: [
         FooterComponent

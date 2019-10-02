@@ -11,7 +11,6 @@ import { MediaModel } from '@shared/models/media.model';
 export class FooterComponent extends BaseComponent {
     private _basicInfo: BasicInformationModel;
     private _media: MediaModel;
-    private _dmcaId: string;
 
     constructor(private _dataService: DataService) {
         super();
@@ -20,11 +19,6 @@ export class FooterComponent extends BaseComponent {
     ngOnInit(): void {
         this._basicInfo = this._dataService.GetBasicInformation();
         this._media = this._dataService.GetMedia();
-        this._dmcaId = this._dataService.GetDmcaId();
-    }
-
-    get DmcaId(): string {
-        return this._dmcaId;
     }
 
     get BasicInformation(): BasicInformationModel {
