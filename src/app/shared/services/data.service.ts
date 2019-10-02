@@ -15,6 +15,10 @@ import { FileModel } from '@shared/models/file.model';
 })
 export class DataService {
 
+    GetDmcaId(): string {
+        return '248f046b-b7e2-4a15-b47a-e9722393e2f7';
+    }
+
     GetBasicInformation(): BasicInformationModel {
         let data = new BasicInformationModel();
         data.FirstName = 'Rubal';
