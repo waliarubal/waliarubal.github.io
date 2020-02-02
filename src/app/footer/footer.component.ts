@@ -11,14 +11,20 @@ import { MediaModel } from '@shared/models/media.model';
 export class FooterComponent extends BaseComponent {
     private _basicInfo: BasicInformationModel;
     private _media: MediaModel;
+    private readonly _year: number;
 
     constructor(private _dataService: DataService) {
         super();
+        this._year = new Date().getFullYear();
     }
 
     ngOnInit(): void {
         this._basicInfo = this._dataService.GetBasicInformation();
         this._media = this._dataService.GetMedia();
+    }
+
+    get CopyrightYear(): number {
+        return this._year;
     }
 
     get BasicInformation(): BasicInformationModel {

@@ -25,6 +25,9 @@ export class DataService {
     }
 
     GetBasicInformation(): BasicInformationModel {
+        const timeDifferenence = Math.abs(Date.now() - new Date(2010, 4, 1).getTime());
+        let experienceYears = Math.floor((timeDifferenence / (1000 * 3600 * 24)) / 365.25);
+
         let data = new BasicInformationModel();
         data.FirstName = 'Rubal';
         data.LastName = 'Walia';
@@ -32,7 +35,7 @@ export class DataService {
         data.TagLine = "Desktop App Developer, Web Developer, Gamer";
         data.Summary = [
             `Hello! I am Rubal Walia, an experienced desktop & web application developer and a vertran gamer. 
-            Having almost 10 years of demonstrable industrial desktop application programming experience using .NET Framework, 
+            Having almost ${experienceYears} years of demonstrable industrial desktop application programming experience using .NET Framework, 
             now pushing boundaries towards web application development using Angular and .NET Core.`,
             `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
             Silverlight, Avalonia and Windows Forms. Started career as component developer; now also experienced with
