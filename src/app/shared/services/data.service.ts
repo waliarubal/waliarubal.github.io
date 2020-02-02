@@ -32,10 +32,10 @@ export class DataService {
         data.TagLine = "Desktop App Developer, Web Developer, Gamer";
         data.Summary = [
             `Hello! I am Rubal Walia, an experienced desktop & web application developer and a vertran gamer. 
-            Having almost 9 years of demonstrable industrial desktop application programming experience using .NET Framework, 
+            Having almost 10 years of demonstrable industrial desktop application programming experience using .NET Framework, 
             now pushing boundaries towards web application development using Angular and .NET Core.`,
             `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
-            Silverlight and Windows Forms. Started career as component developer; now also experienced with
+            Silverlight, Avalonia and Windows Forms. Started career as component developer; now also experienced with
             integration of third party libraries, payment gateways & hardware in application, creation of application
             installers, web automation, data scraping, performance & memory profiling, software protection, licensing, etc.`
         ];
@@ -44,7 +44,7 @@ export class DataService {
 
     GetContact(): ContactModel {
         let data = new ContactModel();
-        data.Emails = ['walia.rubal@gmail.com'];
+        data.Emails = ['walia.rubal@gmail.com', 'walia.rubal@rocketmail.com'];
         data.FormsPreeEmail = data.Emails[0];
         data.Phones = ['+91-99288-93416'];
         data.Address = "Walia's, 78, 79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India - 302031";
@@ -94,8 +94,8 @@ export class DataService {
         let data: ReferenceModel[] = [
             <ReferenceModel>{
                 Name: "Adrian Ilewicz",
-                Designation: "Senior Technical Consultant",
-                Organization: "iRiS Software Systems Ltd",
+                Designation: "Founder",
+                Organization: "HospitalIT",
                 AvatarImageUrl: "assets/images/people/adrian.jpg",
                 Comments: [
                     "Rubal is a great .NET developer! He quickly grasps problems and implements solutions swiftly, producing clean and understandable code without overengineering solutions.",
@@ -103,7 +103,7 @@ export class DataService {
             },
             <ReferenceModel>{
                 Name: "Bernard Leigh",
-                Designation: "Vice President (Customer Success)",
+                Designation: "Senior Vice President (Customer Success)",
                 Organization: "Aurea Software",
                 AvatarImageUrl: "assets/images/people/bernie.jpg",
                 Comments: [
@@ -224,7 +224,7 @@ export class DataService {
         let data: FileModel[] = [
             <FileModel>{
                 Url: "https://github.com/waliarubal/Jaya",
-                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/master/Screenshots/00.png",
+                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/dev/Documents/00.png",
                 Title: "Jaya",
                 Description: "Cross platform file explorer application compatible with Windows, Mac and Linux operating systems."
             },
@@ -295,12 +295,6 @@ export class DataService {
                 Description: "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game."
             },
             <FileModel>{
-                Url: "https://heroesandgenerals.com/",
-                ImageUrl: "assets/images/games/hng.jpg",
-                Title: "Heroes & Generals",
-                Description: "Heroes & Generals is a free-to-play first-person shooter and real-time strategy video game."
-            },
-            <FileModel>{
                 Url: "https://assassinscreed.ubisoft.com/game/en-us/home",
                 ImageUrl: "assets/images/games/ac.jpeg",
                 Title: "Assasin's Creed Series",
@@ -311,12 +305,6 @@ export class DataService {
                 ImageUrl: "assets/images/games/dota2.jpg",
                 Title: "DOTA 2",
                 Description: "Dota 2 is a multiplayer online battle arena video game."
-            },
-            <FileModel>{
-                Url: "https://supercell.com/en/games/clashofclans/",
-                ImageUrl: "assets/images/games/coc.jpg",
-                Title: "Clash of Clans",
-                Description: "Clash of Clans is a freemium mobile strategy video game."
             },
             <FileModel>{
                 Url: "https://star-conflict.com/",
