@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DmcaModule } from '../dmca/dmca.module';
+import { CommonModule } from '@angular/common';
 
+import { DmcaModule } from '../dmca/dmca.module';
 import { FooterComponent } from './footer.component';
+
 
 @NgModule({
     declarations: [
@@ -10,6 +12,7 @@ import { FooterComponent } from './footer.component';
     ],
     imports: [
         BrowserModule,
+        CommonModule,
         DmcaModule
     ],
     exports: [

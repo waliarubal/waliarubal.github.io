@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { ProfileComponent } from '@app/content/profile/profile.component';
 import { AboutComponent } from '@app/content/about/about.component';
@@ -24,7 +25,8 @@ import { ContentComponent } from '@app/content/content.component';
         ContentComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        CommonModule
     ],
     exports: [
         ContentComponent

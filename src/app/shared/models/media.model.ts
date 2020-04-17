@@ -42,10 +42,6 @@ export class MediaModel extends BaseModel {
         this.Set('twit', value);
     }
 
-    get GooglePlusUrl(): string {
-        return this.Get('gp');
-    }
-
     set GooglePlusUrl(value: string) {
         this.Set('gp', value);
     }

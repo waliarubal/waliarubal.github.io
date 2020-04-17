@@ -32,13 +32,13 @@ export class DataService {
         data.FirstName = 'Rubal';
         data.LastName = 'Walia';
         data.DateOfBirth = new Date(1988, 7, 1, 17, 42, 0, 0);
-        data.TagLine = "Desktop App Developer, Web Developer, Gamer";
+        data.TagLine = "App Developer (Web, Mobile & Desktop), Gamer";
         data.Summary = [
-            `Hello! I am Rubal Walia, an experienced desktop & web application developer and a vertran gamer. 
-            Having almost ${experienceYears} years of demonstrable industrial desktop application programming experience using .NET Framework, 
-            now pushing boundaries towards web application development using Angular and .NET Core.`,
+            `Hello! I am Rubal Walia, an experienced desktop, web and mobile application developer and a vertran gamer. 
+            Having almost ${experienceYears} years of demonstrable Line of Business desktop application programming experience using .NET Framework, 
+            now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.`,
             `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
-            Silverlight, Avalonia and Windows Forms. Started career as component developer; now also experienced with
+            Silverlight, Avalonia and Windows Forms. Started career as a component developer; now also experienced with
             integration of third party libraries, payment gateways & hardware in application, creation of application
             installers, web automation, data scraping, performance & memory profiling, software protection, licensing, etc.`
         ];
@@ -64,17 +64,17 @@ export class DataService {
             'Punjabi'
         ];
         data.ProfessionalSkills = [
-            new Doublet('Desktop App Development (WPF, WinForms, UWP, Silverlight, Avalonia)', 92),
-            new Doublet('Backend Development (WCF, Web API)', 68),
-            new Doublet('Frontend Development (Angular, TypeScript, JavaScript, Electron)', 72),
-            new Doublet('Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access)', 78),
-            new Doublet('.NET Framework & Mono (C#, VB.NET)', 85),
+            new Doublet('App Development (WPF, WinForms, UWP, Silverlight, Avalonia, Xamarin)', 95),
+            new Doublet('Backend Development (WCF, Web API, Firebase Functions)', 68),
+            new Doublet('Frontend Development (Angular, TypeScript, JavaScript)', 72),
+            new Doublet('Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access, Firebase)', 78),
+            new Doublet('.NET Framework & Mono (C#)', 90),
             new Doublet('IDE (VS, VS Code, Net Beans, Eclipse, SSMS, Azure Data Studio, MySQL Workbench)', 82),
             new Doublet('Version Control (Git, SVN, TFS)', 88),
             new Doublet('Operating Systems (Windows, Linux)', 75),
             new Doublet('Profiling, Code Protection & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
-            new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, Component Factory)', 75),
-            new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J)', 48),
+            new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, SyncFusion)', 75),
+            new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J, Inno Setup)', 48),
             new Doublet('ORM (Dapper, Entity Framework)', 42)
         ];
         return data;
@@ -88,7 +88,6 @@ export class DataService {
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
         data.GitHubUrl = "https://github.com/waliarubal/";
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";
-        data.GooglePlusUrl = "https://plus.google.com/+RubalWalia1988";
         data.TwitterUrl = "https://twitter.com/walia_rubal";
         return data;
     }
@@ -227,9 +226,15 @@ export class DataService {
         let data: FileModel[] = [
             <FileModel>{
                 Url: "https://github.com/waliarubal/Jaya",
-                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/dev/Documents/00.png",
+                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/dev/doc/00.png",
                 Title: "Jaya",
                 Description: "Cross platform file explorer application compatible with Windows, Mac and Linux operating systems."
+            },
+            <FileModel>{
+                Url: "https://github.com/waliarubal/Covid19",
+                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Covid19/master/Screenshots/2.png",
+                Title: "COVID-19",
+                Description: "Mobile application showing stats, map, news and other information about Coronavirus pandemic."
             },
             <FileModel>{
                 Url: "https://github.com/waliarubal/Janitor",
@@ -248,7 +253,7 @@ export class DataService {
                 ImageUrl: "assets/images/projects/ebay-worker.PNG",
                 Title: "eBay Smart Buy - Books",
                 Description: "It is a simple program which will allow one to extract books data from eBay listings."
-            }, 
+            },
             <FileModel>{
                 Url: "https://github.com/waliarubal/ChaturbatePlayer",
                 ImageUrl: "assets/images/projects/chaturbate.PNG",
@@ -321,7 +326,7 @@ export class DataService {
 
     GetPictures(): FileModel[] {
         let data: FileModel[] = [];
-        for(let index = 0; index <= 8; index++) {
+        for (let index = 0; index <= 8; index++) {
             let picture = new FileModel();
             picture.ImageUrl = `assets/images/photos/${index}.jpg`;
             data.push(picture)
