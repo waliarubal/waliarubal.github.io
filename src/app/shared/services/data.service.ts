@@ -82,7 +82,7 @@ export class DataService {
 
     GetMedia(): MediaModel {
         let data = new MediaModel();
-        data.AvatarImageUrl = "assets/images/photos/rubal.png";
+        data.AvatarImageUrl = "assets/images/photos/rubal.jpg";
         data.CoverImageUrl = "assets/images/photos/cover.jpg";
         data.ResumeUrl = "assets/RubalWalia.pdf";
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
