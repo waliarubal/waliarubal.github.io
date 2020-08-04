@@ -34,7 +34,7 @@ export class DataService {
         data.DateOfBirth = new Date(1988, 7, 1, 17, 42, 0, 0);
         data.TagLine = "App Developer (Web, Mobile & Desktop), Gamer";
         data.Summary = [
-            `Hello! I am Rubal Walia, an experienced desktop, web and mobile application developer and a vertran gamer. 
+            `Hello! I am Rubal Walia, an experienced desktop, web &amp; mobile application developer, a vertran gamer, open source advocate and member of .NET Foundation. 
             Having almost ${experienceYears} years of demonstrable Line of Business desktop application programming experience using .NET Framework, 
             now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.`,
             `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
@@ -65,13 +65,13 @@ export class DataService {
         ];
         data.ProfessionalSkills = [
             new Doublet('App Development (WPF, WinForms, UWP, Silverlight, Avalonia, Xamarin)', 95),
-            new Doublet('Backend Development (WCF, Web API, Firebase Functions)', 68),
+            new Doublet('Backend Development (WCF, Web API, Firebase Functions, Amazon Lamda, Google Functions)', 68),
             new Doublet('Frontend Development (Angular, TypeScript, JavaScript)', 72),
             new Doublet('Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access, Firebase)', 78),
             new Doublet('.NET Framework & Mono (C#)', 90),
-            new Doublet('IDE (VS, VS Code, Net Beans, Eclipse, SSMS, Azure Data Studio, MySQL Workbench)', 82),
+            new Doublet('IDE (VS, VS Code, Net Beans, SSMS, Azure Data Studio, MySQL Workbench)', 82),
             new Doublet('Version Control (Git, SVN, TFS)', 88),
-            new Doublet('Operating Systems (Windows, Linux)', 75),
+            new Doublet('Operating Systems (Windows, Linux, MacOS)', 75),
             new Doublet('Profiling, Code Protection & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)', 82),
             new Doublet('UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, SyncFusion)', 75),
             new Doublet('Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J, Inno Setup)', 48),
@@ -190,6 +190,16 @@ export class DataService {
     GetCourses(): CourseModel[] {
         let data: CourseModel[] = [
             <CourseModel>{
+                Name: "Scrum Foundation Certification",
+                FullName: "Scrum Foundation Prodessional",
+                Organization: "CertiProof",
+                YearJoined: 2020,
+                YearCompleted: 2022,
+                Details: [
+                    "Scrum Foundation Prodessional Certificate (SFPC) (Certification ID: 42736361) achieved on July 30, 2020."
+                ]
+            },
+            <CourseModel>{
                 Name: "Microsoft Certification",
                 FullName: "Microsoft Certified Professional",
                 Organization: "Microsoft",
@@ -225,8 +235,8 @@ export class DataService {
     GetProjects(): FileModel[] {
         let data: FileModel[] = [
             <FileModel>{
-                Url: "https://github.com/waliarubal/Jaya",
-                ImageUrl: "https://raw.githubusercontent.com/waliarubal/Jaya/dev/doc/00.png",
+                Url: "https://github.com/nullvoid-creations/Jaya",
+                ImageUrl: "https://raw.githubusercontent.com/nullvoid-creations/Jaya/dev/docs/MainUI_Dark.png",
                 Title: "Jaya",
                 Description: "Cross platform file explorer application compatible with Windows, Mac and Linux operating systems."
             },
