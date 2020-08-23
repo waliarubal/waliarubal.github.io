@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "waliarubal-github-io"
+  "defaultProject": "waliarubal-github-io",
+  "cli": {
+    "analytics": false
+  }
 }
