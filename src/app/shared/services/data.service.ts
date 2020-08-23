@@ -34,7 +34,7 @@ export class DataService {
         data.DateOfBirth = new Date(1988, 7, 1, 17, 42, 0, 0);
         data.TagLine = "App Developer (Web, Mobile & Desktop), Gamer";
         data.Summary = [
-            `Hello! I am Rubal Walia, an experienced desktop, web &amp; mobile application developer, a vertran gamer, open source advocate and member of .NET Foundation. 
+            `Hello! I am Rubal Walia, an experienced desktop, web & mobile application developer, a vertran gamer, open source advocate and member of .NET Foundation. 
             Having almost ${experienceYears} years of demonstrable Line of Business desktop application programming experience using .NET Framework, 
             now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.`,
             `Excellent with framework like Windows Presentation Foundation, Universal Windows Platform,
@@ -47,7 +47,7 @@ export class DataService {
 
     GetContact(): ContactModel {
         let data = new ContactModel();
-        data.Emails = ['walia.rubal@gmail.com', 'walia.rubal@rocketmail.com'];
+        data.Emails = ['walia.rubal@gmail.com'];
         data.FormsPreeEmail = data.Emails[0];
         data.Phones = ['+91-99288-93416'];
         data.Address = "Walia's, 78, 79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India - 302031";
@@ -88,7 +88,7 @@ export class DataService {
         data.LinkedInUrl = "https://www.linkedin.com/in/waliarubal/";
         data.GitHubUrl = "https://github.com/waliarubal/";
         data.FacebookUrl = "https://www.facebook.com/people/Rubal-Walia/100001635701158";
-        data.TwitterUrl = "https://twitter.com/walia_rubal";
+        data.TwitterUrl = "https://twitter.com/imnew2game";
         return data;
     }
 
