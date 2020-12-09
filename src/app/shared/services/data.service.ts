@@ -168,7 +168,7 @@ export class DataService {
                     "Worked as software developer for a New Zealand based overseas client to study an existing application’s behavior to identify flaws in system and possible improvements. Created UI framework using WinForms supporting themes (based on free  Krypton toolkit), form based access rights, data import \ export from various sources (Excel 2003 – 07, IBM SPSS Statistics and SQL Server), data transfer mechanism, crash reporting and end user license management.",
                     "Worked as Senior Technical Consultant for Versata Professional Services (United States). Key responsibilities included handling various phases of software development lifecycle like requirements gathering, requirements & help document preparation, coding, testing and deployment of the developed customizations.",
                     "Working as architect and developer responsible for planning and authoring (an open source) Windows OS based multi-lingual performance optimization utility.",
-                    "•	Worked as Senior Technical Consultant for Aurea Professional Services (United States) responsible for creating various third party connectors to import roster data inside AlertFind system."
+                    "Worked as Senior Technical Consultant for Aurea Professional Services (United States) responsible for creating various third party connectors to import roster data inside AlertFind system."
                 ]
             },
             <EmploymentModel>{
