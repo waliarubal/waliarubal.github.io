@@ -2,7 +2,7 @@
   "name": "waliarubal-github-io",
   "version": "0.0.0",
   "config": {
-    "domain": "www.waliarubal.com"
+    "domain": "waliarubal.github.io"
   },
   "scripts": {
     "ng": "ng",
@@ -11,21 +11,20 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prod-build": "%npm_package_scripts_build% --prod --base-href=\"https://www.waliarubal.com/\"",
-    "deploy-old": "%npm_package_scripts_build% --prod --base-href=\"https://waliarubal.github.io/\" && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent",
-    "deploy": "%npm_package_scripts_build% --prod --base-href=\"https://%npm_package_config_domain%\" && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent"
+    "prod_build": "ng build --configuration production --base-href=\"https://%npm_package_config_domain%/\"",
+    "deploy": "%npm_package_scripts_prod_build% && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^12.0.0",
-    "@angular/common": "^12.0.0",
-    "@angular/compiler": "^12.0.0",
-    "@angular/core": "^12.0.0",
-    "@angular/forms": "^12.0.0",
-    "@angular/localize": "^12.0.0",
-    "@angular/platform-browser": "^12.0.0",
-    "@angular/platform-browser-dynamic": "^12.0.0",
-    "@angular/router": "^12.0.0",
+    "@angular/animations": "^13.3.0",
+    "@angular/common": "^13.3.0",
+    "@angular/compiler": "^13.3.0",
+    "@angular/core": "^13.3.0",
+    "@angular/forms": "^13.3.0",
+    "@angular/localize": "^13.3.0",
+    "@angular/platform-browser": "^13.3.0",
+    "@angular/platform-browser-dynamic": "^13.3.0",
+    "@angular/router": "^13.3.0",
     "@types/aos": "^3.0.3",
     "@types/jquery": "^3.5.1",
     "aos": "^3.0.0-beta.6",
@@ -38,10 +37,10 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.0.0",
-    "@angular/cli": "^12.0.0",
-    "@angular/compiler-cli": "^12.0.0",
-    "@angular/language-service": "^12.0.0",
+    "@angular-devkit/build-angular": "~13.3.0",
+    "@angular/cli": "^13.3.0",
+    "@angular/compiler-cli": "^13.3.0",
+    "@angular/language-service": "^13.3.0",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.12.53",
@@ -57,6 +56,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.2.4"
+    "typescript": "~4.6.2"
   }
 }
