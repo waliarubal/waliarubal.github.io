@@ -1,61 +1,47 @@
 {
   "name": "waliarubal-github-io",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
   "config": {
     "domain": "waliarubal.github.io"
   },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "prod_build": "ng build --configuration production --base-href=\"https://%npm_package_config_domain%/\"",
-    "deploy": "%npm_package_scripts_prod_build% && npx angular-cli-ghpages --dir=\"dist/%npm_package_name%\" --cname=%npm_package_config_domain% --branch=master --no-silent"
-  },
-  "private": true,
   "dependencies": {
-    "@angular/animations": "^13.3.0",
-    "@angular/common": "^13.3.0",
-    "@angular/compiler": "^13.3.0",
-    "@angular/core": "^13.3.0",
-    "@angular/forms": "^13.3.0",
-    "@angular/localize": "^13.3.0",
-    "@angular/platform-browser": "^13.3.0",
-    "@angular/platform-browser-dynamic": "^13.3.0",
-    "@angular/router": "^13.3.0",
-    "@types/aos": "^3.0.3",
-    "@types/jquery": "^3.5.1",
-    "aos": "^3.0.0-beta.6",
-    "bootstrap": "4.0.0-beta.2",
-    "core-js": "^2.6.11",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.0",
-    "@angular/cli": "^13.3.0",
-    "@angular/compiler-cli": "^13.3.0",
-    "@angular/language-service": "^13.3.0",
-    "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "^2.0.8",
-    "@types/node": "^12.12.53",
-    "angular-cli-ghpages": "^0.6.2",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.14",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.6.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && npx angular-cli-ghpages --dir=\"build\" --cname=%npm_package_config_domain% --branch=master --no-silent"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
