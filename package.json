@@ -2,9 +2,6 @@
   "name": "waliarubal-github-io",
   "version": "0.1.0",
   "private": true,
-  "config": {
-    "domain": "waliarubal.github.io"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -23,8 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "react-scripts build && npx angular-cli-ghpages --dir=\"build\" --cname=%npm_package_config_domain% --branch=master --no-silent"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
