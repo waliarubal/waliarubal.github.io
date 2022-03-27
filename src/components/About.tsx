@@ -1,4 +1,6 @@
 import { Component } from "react";
+import { ADDRESS, DATE_OF_BIRTH, EMAIL, PHONE } from "../util/constants";
+import { calculateAge } from "../util/helpers";
 
 export class About extends Component {
 
@@ -8,8 +10,9 @@ export class About extends Component {
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="h3 mb-3">About Me</h2>
-                        <p>Hello! I’m Joyce Harrison. I am passionate about UI/UX design and Web Design. I am a skilled Front-end
-                            Developer and master of Graphic Design tools such as Photoshop and Sketch.</p>
+                        <p>Hello! I am Rubal Walia, an experienced desktop, web &amp; mobile application developer, a veratrin gamer, an open source advocate and member of .NET Foundation.
+                            Having 12+ years (excluding 4 years of freelance experience) of demonstrable Line of Business desktop application programming experience using .NET Framework, now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.
+                        </p>
                     </div>
                     <div className="col-md-5 offset-md-1">
                         <div className="row mt-2">
@@ -17,25 +20,25 @@ export class About extends Component {
                                 <div className="pb-1">Age</div>
                             </div>
                             <div className="col-sm-8">
-                                <div className="pb-1 text-secondary">28</div>
+                                <div className="pb-1 text-secondary">{calculateAge(DATE_OF_BIRTH)}</div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="pb-1">Email</div>
                             </div>
                             <div className="col-sm-8">
-                                <div className="pb-1 text-secondary">Joyce@company.com</div>
+                                <div className="pb-1 text-secondary">{EMAIL}</div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="pb-1">Phone</div>
                             </div>
                             <div className="col-sm-8">
-                                <div className="pb-1 text-secondary">+0718-111-0011</div>
+                                <div className="pb-1 text-secondary">{PHONE}</div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="pb-1">Address</div>
                             </div>
                             <div className="col-sm-8">
-                                <div className="pb-1 text-secondary">140, City Center, New York, U.S.A</div>
+                                <div className="pb-1 text-secondary">{ADDRESS}</div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import { Component, ReactNode } from "react";
+import { FULL_NAME } from "../util/constants";
 
 export class Header extends Component {
 
@@ -7,12 +8,18 @@ export class Header extends Component {
             <header className="d-print-none">
                 <div className="container text-center text-lg-left">
                     <div className="py-3 clearfix">
-                        <h1 className="site-title mb-0">Joyce Harrison</h1>
+                        <h1 className="site-title mb-0">{FULL_NAME}</h1>
                         <div className="site-nav">
                             <nav role="navigation">
                                 <ul className="nav justify-content-center">
                                     <li className="nav-item">
-                                        <a className="nav-link" href="https://twitter.com/templateflip" title="Twitter">
+                                        <a className="nav-link" href="https://www.linkedin.com/in/waliarubal/" title="LinkedIn" rel="noreferrer" target="_blank">
+                                            <i className="fab fa-linkedin"></i>
+                                            <span className="menu-title sr-only">LinkedIn</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="https://twitter.com/imnew2game" title="Twitter" rel="noreferrer" target="_blank">
                                             <i className="fab fa-twitter"></i>
                                             <span className="menu-title sr-only">Twitter</span>
                                         </a>

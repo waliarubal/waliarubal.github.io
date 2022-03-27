@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { FULL_NAME } from "../util/constants";
 
 export class Footer extends Component {
 
@@ -7,7 +8,7 @@ export class Footer extends Component {
             <footer className="pt-4 pb-4 text-muted text-center d-print-none">
                 <div className="container">
                     <div className="my-3">
-                        <div className="h4">Joyce Harrison</div>
+                        <div className="h4">{FULL_NAME}</div>
                         <div className="footer-nav">
                             <nav role="navigation">
                                 <ul className="nav justify-content-center">
@@ -40,7 +41,7 @@ export class Footer extends Component {
                         </div>
                     </div>
                     <div className="text-small">
-                        <div className="mb-1">&copy; Right Resume. All rights reserved.</div>
+                        <div className="mb-1">&copy; {FULL_NAME}. All rights reserved.</div>
                         <div>Design - <a href="https://templateflip.com/" target="_blank" rel="noreferrer">TemplateFlip</a></div>
                     </div>
                 </div>

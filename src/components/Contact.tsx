@@ -1,6 +1,14 @@
 import { Component } from "react";
+import { ADDRESS, EMAIL, PHONE } from "../util/constants";
+import { loadScript } from "../util/helpers";
 
 export class Contact extends Component {
+
+    componentDidMount() {
+        loadScript('scripts/bootstrap.bundle.min.js?ver=1.2.0');
+        loadScript('scripts/aos.js?ver=1.2.0');
+        loadScript('scripts/main.js?ver=1.2.0');
+    }
 
     render() {
         return <>
@@ -20,7 +28,7 @@ export class Contact extends Component {
                                     </div>
                                 </div>
                                 <div className="form-group my-2">
-                                    <textarea className="form-control" style={{resize: "none"}} id="message" name="message" rows={4}
+                                    <textarea className="form-control" style={{ resize: "none" }} id="message" name="message" rows={4}
                                         placeholder="Your Message" required></textarea>
                                 </div>
                                 <button className="btn btn-primary mt-2" type="submit">Send</button>
@@ -30,11 +38,11 @@ export class Contact extends Component {
                     <div className="col">
                         <div className="mt-2">
                             <h3 className="h6">Address</h3>
-                            <div className="pb-2 text-secondary">140, City Center, New York, U.S.A</div>
+                            <div className="pb-2 text-secondary">{ADDRESS}</div>
                             <h3 className="h6">Phone</h3>
-                            <div className="pb-2 text-secondary">+0718-111-0011</div>
+                            <div className="pb-2 text-secondary">{PHONE}</div>
                             <h3 className="h6">Email</h3>
-                            <div className="pb-2 text-secondary">Joyce@company.com</div>
+                            <div className="pb-2 text-secondary">{EMAIL}</div>
                         </div>
                     </div>
                     <div className="col d-none d-print-block">

@@ -32,9 +32,6 @@ ReactDOM.render(
       </div>
     </div>
     <Footer />
-    <script src="%PUBLIC_URL%/scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="%PUBLIC_URL%/scripts/aos.js?ver=1.2.0"></script>
-    <script src="%PUBLIC_URL%/scripts/main.js?ver=1.2.0"></script>
   </React.StrictMode>,
   document.getElementById('top')
 );
