@@ -1,8 +1,13 @@
 import { Component } from "react";
-import { ADDRESS, DATE_OF_BIRTH, EMAIL, PHONE } from "../util/constants";
-import { calculateAge } from "../util/helpers";
+import { ADDRESS, DATE_OF_BIRTH, EMAIL, IWorkExperiences, PHONE } from "../util/constants";
+import { calculateYears } from "../util/helpers";
 
-export class About extends Component {
+export class About extends Component<IWorkExperiences> {
+
+    private getExperience(): number {
+        let from = this.props.Experiences.reverse()[0].From;
+        return calculateYears(from);
+    }
 
     render() {
         return <>
@@ -11,7 +16,7 @@ export class About extends Component {
                     <div className="col-md-6">
                         <h2 className="h3 mb-3">About Me</h2>
                         <p>Hello! I am Rubal Walia, an experienced desktop, web &amp; mobile application developer, a veratrin gamer, an open source advocate and member of .NET Foundation.
-                            Having 12+ years (excluding 4 years of freelance experience) of demonstrable Line of Business desktop application programming experience using .NET Framework, now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.
+                            Having {this.getExperience()}+ years (excluding 4 years of freelance experience) of demonstrable Line of Business desktop application programming experience using .NET Framework, now pushing boundaries towards web (Angular) and mobile application (Xamarin) development.
                         </p>
                     </div>
                     <div className="col-md-5 offset-md-1">
@@ -20,7 +25,7 @@ export class About extends Component {
                                 <div className="pb-1">Age</div>
                             </div>
                             <div className="col-sm-8">
-                                <div className="pb-1 text-secondary">{calculateAge(DATE_OF_BIRTH)}</div>
+                                <div className="pb-1 text-secondary">{calculateYears(DATE_OF_BIRTH)}</div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="pb-1">Email</div>

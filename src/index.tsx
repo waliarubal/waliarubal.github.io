@@ -9,20 +9,21 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Separator } from './components/Separator';
 import { Skills } from './components/Skills';
+import { SOCIAL_MEDIA_PROFILES, WORK_EXPERIENCES } from './util/constants';
 
 ReactDOM.render(
   <React.StrictMode>
     <noscript>You need to enable JavaScript to run this website.</noscript>
-    <Header />
+    <Header Profiles={SOCIAL_MEDIA_PROFILES.Profiles} />
     <div className="page-content">
       <div className="container">
         <div className="cover shadow-lg bg-white">
           <Cover />
-          <About />
+          <About Experiences={WORK_EXPERIENCES.Experiences} />
           <Separator />
           <Skills />
           <Separator />
-          <Experience />
+          <Experience Experiences={WORK_EXPERIENCES.Experiences} />
           <Separator />
           <div className="page-break"></div>
           <Education />
@@ -31,7 +32,7 @@ ReactDOM.render(
         </div>
       </div>
     </div>
-    <Footer />
+    <Footer Profiles={SOCIAL_MEDIA_PROFILES.Profiles} />
   </React.StrictMode>,
   document.getElementById('top')
 );

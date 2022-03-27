@@ -1,7 +1,8 @@
 import { Component } from "react";
-import { FULL_NAME } from "../util/constants";
+import { DATE_OF_BIRTH, FULL_NAME, ISocialMediaProfiles } from "../util/constants";
+import { SocialMediaProfile } from "./SocialMediaProfile";
 
-export class Footer extends Component {
+export class Footer extends Component<ISocialMediaProfiles> {
 
     render() {
         return <>
@@ -12,37 +13,20 @@ export class Footer extends Component {
                         <div className="footer-nav">
                             <nav role="navigation">
                                 <ul className="nav justify-content-center">
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="https://twitter.com/templateflip" title="Twitter">
-                                            <i className="fab fa-twitter"></i>
-                                            <span className="menu-title sr-only">Twitter</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="https://www.facebook.com/templateflip" title="Facebook">
-                                            <i className="fab fa-facebook"></i>
-                                            <span className="menu-title sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="https://www.instagram.com/templateflip" title="Instagram">
-                                            <i className="fab fa-instagram"></i>
-                                            <span className="menu-title sr-only">Instagram</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="https://github.com/templateflip" title="Github">
-                                            <i className="fab fa-github"></i>
-                                            <span className="menu-title sr-only">Github</span>
-                                        </a>
-                                    </li>
+                                    {this.props.Profiles.map(profile =>
+                                        profile.Url !== null &&
+                                        <SocialMediaProfile
+                                            key={profile.Name}
+                                            Name={profile.Name}
+                                            IconClass={profile.IconClass}
+                                            Url={profile.Url} />)}
                                 </ul>
                             </nav>
                         </div>
                     </div>
                     <div className="text-small">
-                        <div className="mb-1">&copy; {FULL_NAME}. All rights reserved.</div>
-                        <div>Design - <a href="https://templateflip.com/" target="_blank" rel="noreferrer">TemplateFlip</a></div>
+                        <div className="mb-1">&copy; {DATE_OF_BIRTH.getFullYear()} - {new Date().getFullYear()} {FULL_NAME}. All rights reserved.</div>
+                        <div style={{ display: 'none' }}>Design - <a href="https://templateflip.com/" target="_blank" rel="noreferrer">TemplateFlip</a></div>
                     </div>
                 </div>
             </footer>
