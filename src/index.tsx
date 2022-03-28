@@ -28,7 +28,7 @@ ReactDOM.render(
           <div className="page-break"></div>
           <Education Credentials={EDUCATION_CREDENTIALS.Credentials} />
           <Separator />
-          <Contact />
+          <Contact Profiles={SOCIAL_MEDIA_PROFILES.Profiles} />
         </div>
       </div>
     </div>

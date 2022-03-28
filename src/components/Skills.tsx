@@ -27,7 +27,7 @@ export class Skills extends Component<ISkills> {
 
     render() {
         let primarySkills = this.props.Skills.slice(0, this.props.Skills.length / 2 - 1);
-        let secondarySkills = this.props.Skills.slice(this.props.Skills.length / 2, this.props.Skills.length / 2 - 1);
+        let secondarySkills = this.props.Skills.slice(this.props.Skills.length / 2);
 
         return <>
             <div className="skills-section px-3 px-lg-4">

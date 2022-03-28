@@ -17,7 +17,7 @@ export class Cover extends Component {
                         <h2 className="h1 mt-2" data-aos="fade-left" data-aos-delay={0}>{FULL_NAME}</h2>
                         <p data-aos="fade-left" data-aos-delay={100}>Delivery Manager &amp; Software Developer</p>
                         <div className="d-print-none" data-aos="fade-left" data-aos-delay={200}>
-                            <a className="btn btn-light text-dark shadow-sm mt-1 me-1" href="right-resume.pdf" target="_blank">Download CV</a>
+                            <a className="btn btn-light text-dark shadow-sm mt-1 me-1" href={require('../assets/RubalWalia.pdf')} download={true}>Download CV</a>
                             <a className="btn btn-success shadow-sm mt-1" href="#contact">Hire Me</a>
                         </div>
                     </div>
