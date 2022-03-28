@@ -4,6 +4,27 @@ export const PHONE = '+91-99288-93416';
 export const ADDRESS = '79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India (Postcode 302031)';
 export const DATE_OF_BIRTH = new Date(1988, 7, 1, 17, 42, 0, 0);
 
+export interface ISkill {
+    Name: string;
+    Percent: number;
+}
+
+export interface ISkills {
+    Skills: ISkill[];
+}
+
+export interface IEducationCredential {
+    Name: string;
+    Organization: string;
+    FromYear: number;
+    ToYear: number;
+    Details: string;
+}
+
+export interface IEducationCredentials {
+    Credentials: IEducationCredential[];
+}
+
 export interface ISocialMediaProfile {
     IconClass: string;
     Name: string;
@@ -26,6 +47,94 @@ export interface IWorkExperiences {
     Experiences: IWorkExperience[];
 }
 
+export const SKILLS = {
+    Skills: [
+        {
+            Name: 'App Development (WPF, WinForms, UWP, Silverlight, Avalonia, Xamarin)',
+            Percent: 95
+        },
+        {
+            Name: 'Backend Development (WCF, Web API, Firebase Functions, Amazon Lamda, Google Functions)',
+            Percent: 88
+        },
+        {
+            Name: 'Frontend Development (Angular, React, TypeScript, JavaScript)',
+            Percent: 82
+        },
+        {
+            Name: 'Database (MS SQL Server, MySQL, SQLite, Mongo DB, MS Access, Firebase)',
+            Percent: 78
+        },
+        {
+            Name: '.NET Framework & Mono (C#)',
+            Percent: 90
+        },
+        {
+            Name: 'IDE (VS, VS Code, Net Beans, SSMS, Azure Data Studio, MySQL Workbench)',
+            Percent: 82
+        },
+        {
+            Name: 'Version Control (Git, SVN, TFS)',
+            Percent: 85
+        },
+        {
+            Name: 'Operating Systems (Windows, Linux, MacOS)',
+            Percent: 76
+        },
+        {
+            Name: 'Profiling, Code Protection & Reverse Engineering (DotPeek, Ants, SQL Profiler, Smart Assembly)',
+            Percent: 82
+        },
+        {
+            Name: 'UI Toolkits (Telerik, Infragistics, DevExpress, Xceed, SyncFusion)',
+            Percent: 72
+        },
+        {
+            Name: 'Installer Authoring (Install Shield, Install Aware, WiX Toolkit, Install4J, Inno Setup)',
+            Percent: 52
+        },
+        {
+            Name: 'ORM (Dapper, Entity Framework)',
+            Percent: 65
+        }
+    ]
+} as ISkills;
+
+export const EDUCATION_CREDENTIALS = {
+    Credentials: [
+        {
+            Name: 'Scrum Foundation Prodessional',
+            Organization: 'CertiProof',
+            FromYear: 2020,
+            ToYear: 2022,
+            Details: 'Scrum Foundation Prodessional Certificate (SFPC) (Certification ID: 42736361) achieved on July 30, 2020.'
+        },
+        {
+            Name: 'Microsoft Certified Professional',
+            Organization: 'Microsoft',
+            FromYear: 2011,
+            ToYear: 2012,
+            Details: `Microsoft Certified Professional (Certification Number: E921-5531) achieved on April 16, 2012.
+            Microsoft® Certified Technology Specialist: .NET Framework 4, Windows Applications (Certification Number: D279-9599) achieved on June 1, 2011.`
+        },
+        {
+            Name: 'Bachelor of Technology (Computer Science & Engineering)',
+            Organization: 'Rajasthan Technical University',
+            FromYear: 2006,
+            ToYear: 2012,
+            Details: `Attained Bachelor of Technology degree in Computer Science and Engineering from CompuCom Institute of Information Technology and Management which is affiliated to Rajasthan Technical University.`
+        },
+        {
+            Name: 'High School (Science, Mathematics & Computers)',
+            Organization: 'Centeral Board of Secondary Education',
+            FromYear: 2004,
+            ToYear: 2006,
+            Details: `Completed Secondary in the year 2004 from Seedling Public School which is affiliated to Central Board of Secondary Education. Subjects studied were English, Hindi, Mathematics, Scjence & Technology and Social Science.
+            Completed Senior-Secondary in the year 2006 from Seedling Public School which is affiliated to Central Board of Secondary Education. Subjects studied were English, Mathematics, Physics, Chemistry and Informatics Practices.`
+        }
+    ]
+} as IEducationCredentials;
+
 export const WORK_EXPERIENCES = {
     Experiences: [
         {
@@ -33,7 +142,7 @@ export const WORK_EXPERIENCES = {
             Role: 'Delivery Manager',
             From: new Date(2021, 6, 14),
             To: null,
-            Responsibilities: `•	Working as software Delivery Manager responsible for managing deliveries for large scale enterprise applications, regularly communicating with clients, and acting as a bridge between development teams.
+            Responsibilities: `Working as software Delivery Manager responsible for managing deliveries for large scale enterprise applications, regularly communicating with clients, and acting as a bridge between development teams.
             Involved in active staffing for company and interviewing technical resources for various software development roles.
             As a part of daily activity, I am overseeing the development of ongoing project to make sure the code quality meets industry standards and deliverables land the client environments on time.
             Involved in active technical research and Proof-of-Concept application creation for clients to bag-in new projects and successful completion of ongoing projects.

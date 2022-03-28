@@ -9,7 +9,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Separator } from './components/Separator';
 import { Skills } from './components/Skills';
-import { SOCIAL_MEDIA_PROFILES, WORK_EXPERIENCES } from './util/constants';
+import { EDUCATION_CREDENTIALS, SKILLS, SOCIAL_MEDIA_PROFILES, WORK_EXPERIENCES } from './util/constants';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,12 +21,12 @@ ReactDOM.render(
           <Cover />
           <About Experiences={WORK_EXPERIENCES.Experiences} />
           <Separator />
-          <Skills />
+          <Skills Skills={SKILLS.Skills} />
           <Separator />
           <Experience Experiences={WORK_EXPERIENCES.Experiences} />
           <Separator />
           <div className="page-break"></div>
-          <Education />
+          <Education Credentials={EDUCATION_CREDENTIALS.Credentials} />
           <Separator />
           <Contact />
         </div>
