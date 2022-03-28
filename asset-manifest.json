@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.d2299497.js",
+    "main.js": "/static/js/main.fd620153.js",
     "static/media/avatar.webp": "/static/media/avatar.5edf4c03b25eedba3967.webp",
+    "static/media/RubalWalia.pdf": "/static/media/RubalWalia.da4be4c5b5936c688a9b.pdf",
     "index.html": "/index.html",
-    "main.d2299497.js.map": "/static/js/main.d2299497.js.map"
+    "main.fd620153.js.map": "/static/js/main.fd620153.js.map"
   },
   "entrypoints": [
-    "static/js/main.d2299497.js"
+    "static/js/main.fd620153.js"
   ]
 }
