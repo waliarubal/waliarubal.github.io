@@ -34,5 +34,5 @@ ReactDOM.render(
     </div>
     <Footer Profiles={SOCIAL_MEDIA_PROFILES.Profiles} />
   </React.StrictMode>,
-  document.getElementById('top')
+  document.body
 );
