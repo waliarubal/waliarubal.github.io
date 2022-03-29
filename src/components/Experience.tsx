@@ -10,7 +10,7 @@ class ExperienceCard extends Component<IWorkExperience> {
                     <div className="h5 mb-1">{this.props.Role} <span className="text-muted h6">at {this.props.Company}</span></div>
                     <div className="text-muted text-small mb-2">{getMonthName(this.props.From)}, {this.props.From.getFullYear()} -
                         {this.props.To === null ?
-                            'Present' :
+                            ' Present' :
                             <> {getMonthName(this.props.To)}, {this.props.To.getFullYear()}</>
                         }
                     </div>
