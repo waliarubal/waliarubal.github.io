@@ -1,15 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { About } from './components/About';
-import { Contact } from './components/Contact';
-import { Cover } from './components/Cover';
-import { Education } from './components/Education';
-import { Experience } from './components/Experience';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Separator } from './components/Separator';
-import { Skills } from './components/Skills';
-import { EDUCATION_CREDENTIALS, SKILLS, SOCIAL_MEDIA_PROFILES, WORK_EXPERIENCES } from './util/constants';
+import React from "react";
+import ReactDOM from "react-dom";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Cover } from "./components/Cover";
+import { Education } from "./components/Education";
+import { Experience } from "./components/Experience";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Separator } from "./components/Separator";
+import { Skills } from "./components/Skills";
+import {
+  EDUCATION_CREDENTIALS,
+  SKILLS,
+  SOCIAL_MEDIA_PROFILES,
+  WORK_EXPERIENCES,
+} from "./util/constants";
 
 ReactDOM.render(
   <React.StrictMode>
