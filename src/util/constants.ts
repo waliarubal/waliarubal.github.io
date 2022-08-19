@@ -5,9 +5,9 @@ import { IWorkExperiences } from "../models/WorkExperiences";
 
 export const FULL_NAME = "Rubal Walia";
 export const EMAIL = "walia.rubal@gmail.com";
-export const PHONE = "+91-99288-93416";
+export const PHONE = "+1(604)865-1338";
 export const ADDRESS =
-  "79, Kanji Nagar, Near Balti Factory, Agra Road, Jaipur, Rajasthan, India (Postcode 302031)";
+  "11682 87A Avenue, Delta, BC, Canada V4C3B3";
 export const DATE_OF_BIRTH = new Date(1988, 7, 1, 17, 42, 0, 0);
 
 export const SKILLS = {
@@ -105,8 +105,8 @@ export const WORK_EXPERIENCES = {
       Company: "BrickRed Infinite Solutions Pvt Ltd",
       Role: "Delivery Manager",
       From: new Date(2021, 6, 14),
-      To: null,
-      Responsibilities: `Working as software Delivery Manager responsible for managing deliveries for large scale enterprise applications, regularly communicating with clients, and acting as a bridge between development teams.
+      To: new Date(2022, 7, 14),
+      Responsibilities: `Worked as software Delivery Manager responsible for managing deliveries for large scale enterprise applications, regularly communicating with clients, and acting as a bridge between development teams.
             Involved in active staffing for company and interviewing technical resources for various software development roles.
             As a part of daily activity, I am overseeing the development of ongoing project to make sure the code quality meets industry standards and deliverables land the client environments on time.
             Involved in active technical research and Proof-of-Concept application creation for clients to bag-in new projects and successful completion of ongoing projects.
