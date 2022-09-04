@@ -21,7 +21,7 @@ export class About extends Component<IWorkExperiences> {
               and member of .NET Foundation. Having {this.getExperience()}+
               years (excluding 4 years of freelance experience) of demonstrable
               Line of Business desktop application programming experience using
-              .NET Framework, now pushing boundaries towards web (Angular) and
+              .NET Framework, now pushing boundaries towards web (Angular, React) and
               mobile application (Xamarin) development.
             </p>
           </div>
